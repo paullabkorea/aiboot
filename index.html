@@ -273,6 +273,7 @@ footer.site{background:#0F1E3D;color:rgba(255,255,255,.72);font-size:15px;paddin
         <li><a href="#recruit">모집 안내</a></li>
         <li><a href="#faq">자주 묻는 질문</a></li>
         <li><a href="#location">오시는 길</a></li>
+        <li><a href="board/">게시판</a></li>
       </ul>
     </nav>
     <div class="hd-actions">
@@ -719,7 +720,7 @@ const links = $$("a", gnb);
 const io = new IntersectionObserver(es => es.forEach(e => {
   if (e.isIntersecting) links.forEach(l => l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id));
 }), { rootMargin: "-45% 0px -50% 0px" });
-links.forEach(l => { const s = $(l.getAttribute("href")); if (s) io.observe(s); });
+links.forEach(l => { const h = l.getAttribute("href"); if (!h.startsWith("#")) return; const s = $(h); if (s) io.observe(s); });
 </script>
 </body>
 </html>
