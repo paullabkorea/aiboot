@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>제주대학교 첨단인재양성 부트캠프</title>
+<meta name="description" content="제주대학교에서 AI 실무를 배우고 다음 일을 준비하는 성인 미취업자 대상 부트캠프. 지금 교육 신청을 받고 있습니다.">
+<meta name="theme-color" content="#003288">
+<meta property="og:type" content="website">
+<meta property="og:title" content="제주대학교 첨단인재양성 부트캠프">
+<meta property="og:description" content="제주에서 AI 실무를 배우고 다음 일을 시작하세요. 성인 미취업자 누구나 신청할 수 있습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0NicgaGVpZ2h0PSc2Mycgdmlld0JveD0nMCAwIDQ2IDYzJz48cGF0aCBkPSdNMTQuMDE0LDIwLjI3OEMxMi43NDIsMjMuMjkxLDguNywyOC4zMyw4LjcsMjguMzNjLTIuMSwyLjc1MS00LjU4Niw2LjItNS40NjIsMTAuNzY1QzEuMzg1LDUxLjcyMiw5LjI2NSw1OC4yMjgsMTQuMSw2MC4wNTlBMTcuMSwxNy4xLDAsMCwxLDUuMjA2LDQxLjg2N2MuNzg0LTMuODcyLDIuODY0LTcuODUsNy41ODgtMTIuOTEsMCwwLDUuNTczLTUuNzg2LDYuMzI2LTEwLjgxMkExNy42NjMsMTcuNjYzLDAsMCwwLDExLjMzNCwwYTE5LjI4NSwxOS4yODUsMCwwLDEsMi42ODEsMjAuMjc4JyBmaWxsPScjNjRhOTFjJy8+PHBhdGggZD0nTTIwLjg2NSwyMi4xOTJjLTEuNjUsMy45MzEtNS45NzEsNy44NzEtNS45NzEsNy44NzEtNi44MjIsNi41NTMtNy43LDEwLjQ0LTcuNywxMC40NEExNi41MSwxNi41MSwwLDAsMCw4Ljg2LDU0LjMyYTE0LjYzNCwxNC42MzQsMCwwLDAsOC45NTksNi40NTcsMTEuNzc2LDExLjc3NiwwLDAsMS03Ljk3LTEwLjM0NWMtLjI4OS0zLjksMS45MDgtOC44NDgsOC4yNi0xMy44MjNhMzUuMTE1LDM1LjExNSwwLDAsMCw1LjY4OC01Ljc0LDE4Ljk4MSwxOC45ODEsMCwwLDAsMy41OTItOC41NiwyMC4zMTIsMjAuMzEyLDAsMCwwLTEuMTcyLTkuOTkxLDIxLjcsMjEuNywwLDAsMC01LjY2LTguNDg0YzQuODM1LDkuMjg5LjMwOSwxOC4zNTkuMzA5LDE4LjM1OScgZmlsbD0nI2IwYmNjMicvPjxwYXRoIGQ9J000NC40OTEsNDIuNzUyVjIxLjEwOUgzNS44NzZWNDUuMjQzYy0uMDI2LDEuNjc1LS4xNzMsMy41NDctLjE3MywzLjU0N2ExMS40LDExLjQsMCwwLDEtLjg5MiwzLjkyMSwxMy40MTgsMTMuNDE4LDAsMCwxLTUuMDc4LDYuMTU1Yy04Ljk4OSw2LjAzOC0xNy45NzgsMS4wNDMtMTcuOTc4LDEuMDQzLDExLjIzNiw2LjYzNSwyMi4xNzIuNTIyLDIyLjE3Mi41MjIsNy43LTQuNDQsOS43OTUtMTAuNDgxLDEwLjM2Mi0xMy43MzFhMzAuNTQ5LDMwLjU0OSwwLDAsMCwuMi0zLjk0OCcgZmlsbD0nIzAwMzI4OCcvPjxwYXRoIGQ9J00xMC4wMDcsNTguNTM5QTE5LjQzMSwxOS40MzEsMCwwLDEsMi43Nyw0OC42MjFhMjIuOTIsMjIuOTIsMCwwLDEtLjczMy0xMC40NSwyNy4wMjksMjcuMDI5LDAsMCwxLDIuNi03LjQsNDEuMzIxLDQxLjMyMSwwLDAsMSwzLTQuNTE3QTQxLjEzMiw0MS4xMzIsMCwwLDAsMTAuMTc1LDIyLjMsMTIuNzcsMTIuNzcsMCwwLDAsOS4xNDEsOC4wNTdzMi4yNDMsNS43NzYtLjY4NiwxMS4xNTVjMCwwLTEuMzc3LDIuMzUtMi44NzMsNC41NzgsMCwwLTMuMjg4LDQuNzM4LTQuMjUsNy45NTNBMjMuNDg3LDIzLjQ4NywwLDAsMCwuNTg5LDQ0Ljg3czEuNTU2LDkuMzU2LDkuNDE4LDEzLjY2OScgZmlsbD0nIzAwOTllNycvPjxwYXRoIGQ9J00xOC45NzIsNTguMDg5VjU1LjRoLS41MzF2LS4zNjloMS4wNzF2My4wNlonIGZpbGw9JyMwMDMyODgnLz48cGF0aCBkPSdNMjEuNzUzLDU1Ljk2NWEuOC44LDAsMCwwLS4xMDgtLjQ2Ni4zOTQuMzk0LDAsMCwwLS4zNDEtLjE0OC4zNjcuMzY3LDAsMCwwLS4zMjIuMTQ2Ljg3MS44NzEsMCwwLDAtLjEuNDczLjg1Ljg1LDAsMCwwLC4xLjQ3NS4zODguMzg4LDAsMCwwLC4zMzUuMTM0LjM4Mi4zODIsMCwwLDAsLjMzNS0uMTQ2LjgyOC44MjgsMCwwLDAsLjEtLjQ2OG0tLjEuOGEuNzU2Ljc1NiwwLDAsMS0uMjMuMTE2LjgwOS44MDksMCwwLDEtLjI1OS4wMzguNzkuNzksMCwwLDEtLjYxOS0uMjE2LDEuNCwxLjQsMCwwLDEsLjA0NC0xLjQ3OC45ODEuOTgxLDAsMCwxLC43MzMtLjI0NS45MzcuOTM3LDAsMCwxLC43MTkuMjU5LDEuMTMyLDEuMTMyLDAsMCwxLC4yMzYuNzgyLDIuMSwyLjEsMCwwLDEtLjIuODU4LDcuMDA3LDcuMDA3LDAsMCwxLS43NzMsMS4yMDdoLS42MjhxLjQxMi0uNTEyLjYxOS0uOGMuMTM4LS4xODkuMjU2LS4zNjIuMzU1LS41MjMnIGZpbGw9JyMwMDMyODgnLz48cGF0aCBkPSdNMjIuNzcxLDU3LjYyYTEuMywxLjMsMCwwLDAsLjI3OC4xMDUsMS4yLDEuMiwwLDAsMCwuMjkyLjAzNi43ODUuNzg1LDAsMCwwLC41NzUtLjE4OS43MzguNzM4LDAsMCwwLC4xOTMtLjU1OC40ODcuNDg3LDAsMCwwLS4yLS40MjIsMS4wMTcsMS4wMTcsMCwwLDAtLjU4Ni0uMTM5Yy0uMTA2LDAtLjE5NCwwLS4yNjkuMDA5YTIuMTc2LDIuMTc2LDAsMCwwLS4yMjMuMDMybC4yODQtMS40NjRoMS41VjU1LjRIMjMuNTcybC0uMTY4Ljc0Ni4xNTMtLjAxN2MuMDQ2LDAsLjA4NywwLC4xMjIsMGExLjAxLDEuMDEsMCwwLDEsLjcwOC4yNDUuODQ2Ljg0NiwwLDAsMSwuMjY4LjY1MywxLjAyNSwxLjAyNSwwLDAsMS0uMzI3LjgxMSwxLjMxNywxLjMxNywwLDAsMS0uOTEuMjkxLDIuMjYsMi4yNiwwLDAsMS0uNDA4LS4wMzYsMi4wNjksMi4wNjksMCwwLDEtLjM4Ni0uMTA5WicgZmlsbD0nIzAwMzI4OCcvPjxwYXRoIGQ9J00yNS4xMTQsNTguMDlsMS4xNDctMS42MjJhMi40MjcsMi40MjcsMCwwLDAsLjIyNy0uNC44My44MywwLDAsMCwuMDc0LS4zMjUuNDI1LjQyNSwwLDAsMC0uMDk0LS4zLjQwNi40MDYsMCwwLDAtLjMtLjEuMzc0LjM3NCwwLDAsMC0uMzIuMTMuNzgxLjc4MSwwLDAsMC0uMDk0LjQ0MnYuMTA2aC0uNTM5YS4yMzYuMjM2LDAsMCwxLS4wMDYtLjA1OXYtLjFhLjgzLjgzLDAsMCwxLC4yNDgtLjY1OCwxLjA4NCwxLjA4NCwwLDAsMSwuNzQyLS4yMjEsMS4xMTUsMS4xMTUsMCwwLDEsLjcuMi42NzEuNjcxLDAsMCwxLC4yNTUuNTU1LDEuMDM5LDEuMDM5LDAsMCwxLS4xLjQyOCwyLjY4MywyLjY4MywwLDAsMS0uMzM1LjUyNmwtLjc3NywxaDEuMTIzdi4zODhaJyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTI2LjQ2MSw0OC4wNnYzLjY4M2ExLjE5NCwxLjE5NCwwLDAsMCwuNSwxLjA2OSwyLjksMi45LDAsMCwwLDEuNTc2LjMzNSwyLjkzMywyLjkzMywwLDAsMCwxLjU4LS4zMzUsMS4yLDEuMiwwLDAsMCwuNS0xLjA2OVY0OC4wNkgyOS41NjJWNTEuOGEuNi42LDAsMCwxLS4yNDkuNTM0LDEuODQ5LDEuODQ5LDAsMCwxLTEuNTQ5LDAsLjU5NC41OTQsMCwwLDEtLjI1NS0uNTM0VjQ4LjA2WicgZmlsbD0nIzAwMzI4OCcvPjxwYXRoIGQ9J00xNS43MDgsNTMuMTU4YTEuOTI0LDEuOTI0LDAsMCwwLDEuMjQxLS4zMzQsMS4yNywxLjI3LDAsMCwwLC40LTEuMDM1VjQ4LjA2SDE2LjI5djMuNzQ4YS43LjcsMCwwLDEtLjE4Ny41MzcuODU0Ljg1NCwwLDAsMS0uNTg4LjE3MiwxLjYzNCwxLjYzNCwwLDAsMS0uNDQ5LS4wNjksMi40MywyLjQzLDAsMCwxLS40ODMtLjIwOXYuN2EyLjY1LDIuNjUsMCwwLDAsLjU0OS4xNjgsMi45NzcsMi45NzcsMCwwLDAsLjU3Ny4wNTUnIGZpbGw9JyMwMDMyODgnLz48cGF0aCBkPSdNMjEuNzA5LDQ4LjY2OXYtLjYwOUgxOC41NTh2NS4wMjloMy4xNTF2LS42MzFIMTkuNjE5di0xLjdoMS45MTN2LS42SDE5LjYxOVY0OC42NjlaJyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTI0Ljg2Myw1Mi44MjRhMS4yNjcsMS4yNjcsMCwwLDAsLjQtMS4wMzRWNDguMDZIMjQuMjA3djMuNzQ5YS43LjcsMCwwLDEtLjE4OS41MzYuODU1Ljg1NSwwLDAsMS0uNTg5LjE3MiwxLjY2OSwxLjY2OSwwLDAsMS0uNDQ5LS4wNjksMi4yNjYsMi4yNjYsMCwwLDEtLjQ4NS0uMjA5di43YTIuNzQ5LDIuNzQ5LDAsMCwwLC41NS4xNjgsMi44NzQsMi44NzQsMCwwLDAsLjU4LjA1NSwxLjkwOSwxLjkwOSwwLDAsMCwxLjIzOC0uMzM0JyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTIzLjE5Myw0Ni40NDJhMS45ODQsMS45ODQsMCwwLDAsLjkxOC0uMzA1bDUuMzQ1LjM3VjM5LjY0MkwyOC45LDM5LjYxbC4yNDcuMzg4djYuMjE5bC01LjE0LS4zMjlhMS41MDcsMS41MDcsMCwwLDEtMS43OTEsMGwtNS4xMzguMzI5VjQwbC4yNDUtLjM4OC0uNTU4LjAzMnY2Ljg2NWw1LjM0Ni0uMzdhMS45NywxLjk3LDAsMCwwLC45MTYuMzA1LDEuNDcxLDEuNDcxLDAsMCwwLC4xNjcsMCcgZmlsbD0nI2IwYmNjMicvPjxwYXRoIGQ9J00xNy45LDM5LjIxOWMtLjExOS4xODYtLjUyOC44MjgtLjU0MS44NDV2NS41NzdjLjEyLS4yLjUzLS44NzkuNTQxLS45WicgZmlsbD0nI2IwYmNjMicvPjxwYXRoIGQ9J00yMi4yNzUsNDUuNmwuMDE1LjAxNGExLjE5MSwxLjE5MSwwLDAsMCwuNjA4LjI4MiwxLjE3MSwxLjE3MSwwLDAsMC0uNi0uODgsMy43MjIsMy43MjIsMCwwLDAtMS42OTEtLjI5MWMtLjM1NCwwLS43MzIuMDIxLTEuMTYyLjA2M3MtLjg1NC4xLTEuMy4xODNjLS4wMTkuMDMtLjQ5NS44MTktLjU2Ny45MzguMTU5LS4wMDksNC43LS4zMDksNC43LS4zMDknIGZpbGw9JyNiMGJjYzInLz48cGF0aCBkPSdNMjguODYxLDQwLjA2NWwtLjU0LS44NDV2NS41MjZjLjAxMS4wMTcuNDIuNy41NC45WicgZmlsbD0nI2IwYmNjMicvPjxwYXRoIGQ9J00yMy45Miw0NS4wMTFhMS4xOCwxLjE4LDAsMCwwLS42Ljg4LDEuMTg3LDEuMTg3LDAsMCwwLC42MS0uMjgybC4wMTQtLjAxNHM0LjU0LjMsNC43LjMwOWMtLjA3Mi0uMTE5LS41NDctLjkwOC0uNTY1LS45MzgtLjQ0OC0uMDgtLjg4Ny0uMTQyLTEuMy0uMTg0cy0uODA4LS4wNjItMS4xNjEtLjA2MmEzLjczLDMuNzMsMCwwLDAtMS42OTIuMjkxJyBmaWxsPScjYjBiY2MyJy8+PHBhdGggZD0nTTI2Ljc2NiwzOC42MzFhMTAuOTgyLDEwLjk4MiwwLDAsMC0xLjItLjA2OGwtLjUzNi4wMjMtLjQwOC4wNjFhMi4xNDQsMi4xNDQsMCwwLDAtLjc0NC4yODdsLS4wNTguMDQ0TDIzLjgsMzlhMS44MjYsMS44MjYsMCwwLDAtLjUyMS41NDd2NS42YTEuMywxLjMsMCwwLDEsLjI4My0uMjc2LDMuMzIxLDMuMzIxLDAsMCwxLDEuMzUyLS40MjFsLjAyNCwwLC4wMjYsMGE3LjksNy45LDAsMCwxLDEtLjAzM2wuNzQxLjA1MWMuMzc1LjAzNi44MS4wOTIsMS4zLjE2NFYzOC44MjhjLS40MjEtLjA4Ny0uODM2LS4xNTQtMS4yMy0uMm0uNTQsMS4yNGEyLjY3NSwyLjY3NSwwLDAsMS0xLjU2NywxLjUwN3MuMjA1LjA0OS42ODIuNjEyYTEuOTY1LDEuOTY1LDAsMCwwLC42MjIuNTE0cy0uNjczLDEuMzIxLS43NCwxLjQ3N2EyLjk0NCwyLjk0NCwwLDAsMS0uODMtMS4zMDUuMjM3LjIzNywwLDAsMC0uMjM0LS4xMjJzLS41MzUuMDU5LS43NTMuMDc3YS4yLjIsMCwwLDEtLjIxNiwwbC0uMDc5LS4wODNzLS4wMTkuMDA1LS4wNTItLjAyNGEuMTc5LjE3OSwwLDAsMS0uMDczLS4xMjguMTQyLjE0MiwwLDAsMSwuMDQ0LS4xMTMsNy45MjMsNy45MjMsMCwwLDAsMS4wNTctLjgzMnMtLjAwOS4wMzEuMDQtLjA5M2ExLjcyOCwxLjcyOCwwLDAsMS0uNDI3LS4xNzdzLS4xODgtLjEyOC0uMTgzLS4yOTRsLjA0NCwwczAsLjIuMzg3LjMxOGEuODU1Ljg1NSwwLDAsMS0uMTI3LS4yODIuMTg4LjE4OCwwLDAsMSwuMDU0LS4wMTJzLjExLjMyNi4zLjMzNGMwLDAsLjM2NS0uMjI0LjM5My0uNDc2LDAsMC0uMTUyLS4wOTMtLjIxMy0uNDczbC4wNS0uMDI4cy4wNi4zNTkuMjQuMzQ5YzAsMCwuMTYzLDAsLjI2My0uM2ExLjQ3MiwxLjQ3MiwwLDAsMCwuMDc5LS41LDEuNzY1LDEuNzY1LDAsMCwwLS4wMzctLjI0NGwuMDM3LS4wNmExLjA4MywxLjA4MywwLDAsMSwuMDQ5LjE4NC43NjUuNzY1LDAsMCwxLC4xNDMtLjM2N2wuMDMzLjAxOGEuNjU3LjY1NywwLDAsMC0uMDg3LjQsMS44MjcsMS44MjcsMCwwLDEtLjEyLjY0OCwyLjcsMi43LDAsMCwxLS42MDUuOSw1LjQxNyw1LjQxNywwLDAsMCwuNzQxLS4zNnMuMjIxLS4xMzcuMjQ3LS42MDdoLjA1OGExLDEsMCwwLDEtLjAwNy4zODMsMS42MTEsMS42MTEsMCwwLDAsLjY3Ni0uODIyLjUwOC41MDgsMCwwLDAtLjAxNS0uMzM0bC4wMjQtLjAzMmEuNi42LDAsMCwxLC4wODIuMjMyLjQyMy40MjMsMCwwLDEsLjI1Mi0uMjNsLjAxMy4wMzVhLjYyMS42MjEsMCwwLDAtLjI0My4zMTUnIGZpbGw9JyNiMGJjYzInLz48cGF0aCBkPSdNMjIuNDIxLDM5bC0uMDIyLS4wMTctLjA1OS0uMDQzYTIuMTIxLDIuMTIxLDAsMCwwLS43NDItLjI4OGwtLjQxMS0uMDYxLS41MzMtLjAyM2ExMC43LDEwLjcsMCwwLDAtMS4yLjA2OGMtLjQuMDQzLS44MTEuMTA5LTEuMjMxLjJ2NS43OTVjLjQ4Ni0uMDczLjkyMS0uMTI5LDEuMjk1LS4xNjRsLjc0My0uMDUyYTcuOTgxLDcuOTgxLDAsMCwxLC45OTMuMDM0bC4wMywwLC4wMjgsMGEzLjI4NSwzLjI4NSwwLDAsMSwxLjM0Ny40MjQsMS4yNTEsMS4yNTEsMCwwLDEsLjI4NC4yNzN2LTUuNkExLjgzMSwxLjgzMSwwLDAsMCwyMi40MjEsMzltLS43NDUsNC42NzRIMTkuNmE0LjY3Myw0LjY3MywwLDAsMC0uMzIzLTIuNDg0Yy40MzYtLjQ4OC45OS0xLjIwOSwxLjIzNC0xLjUzM3YxLjk0YS4zMjguMzI4LDAsMSwwLC4yNDMsMFYzOS42MzdjLjIzNi4zMTQuOCwxLjA1MiwxLjI0NiwxLjU0OWE0LjY2OCw0LjY2OCwwLDAsMC0uMzIxLDIuNDg0JyBmaWxsPScjYjBiY2MyJy8+PC9zdmc+">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --navy:#003288; --navy-deep:#00265F; --sky:#0099E7; --sky-web:#049EDC;
+  --blue-web:#0E6FC1; --sky-pale:#78D8FF; --green:#64A91C; --green-web:#54A323;
+  --silver:#B0BCC2; --red:#D93A2B;
+  --t1:#222; --t2:#333; --t3:#666; --t4:#AFAFAF;
+  --bg:#fff; --bg-light:#F2F6FB; --line:#DCE4EF;
+  --font:"SCoreDream","Pretendard Variable",Pretendard,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;font-family:var(--font);letter-spacing:-.02em;word-break:keep-all;color:var(--t2);background:var(--bg);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:inherit}
+h1,h2,h3{color:var(--t1);line-height:1.3;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 16px;z-index:100}
+.skip:focus{left:8px}
+
+/* 버튼 */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 28px;border-radius:12px;font:inherit;font-weight:700;font-size:17px;text-decoration:none;cursor:pointer;border:0;transition:background .15s,color .15s}
+.btn-apply{background:var(--green-web);color:#fff}
+.btn-apply:hover{background:#468a1c}
+.btn-line{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.btn-line:hover{background:rgba(255,255,255,.1)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-deep)}
+.btn-ghost{background:#fff;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1.5px var(--navy)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* 헤더 */
+.strip{height:5px;background:linear-gradient(90deg,var(--green) 0 33.33%,var(--sky) 33.33% 66.66%,var(--navy) 66.66%)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex:none}
+.brand img{height:40px;width:auto;display:block}
+.brand-div{width:1px;height:26px;background:var(--line)}
+.brand b{font-size:16px;color:var(--navy);font-weight:800;line-height:1.25}
+.gnb{display:flex;gap:4px;margin:0;padding:0;list-style:none}
+.gnb a{display:block;white-space:nowrap;padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600;font-size:16px;color:var(--t2)}
+.gnb a:hover,.gnb a.on{color:var(--navy);background:var(--bg-light)}
+.hd .btn{min-height:44px;padding:0 20px;font-size:16px;white-space:nowrap}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:none;cursor:pointer;border-radius:8px}
+.menu-btn span{display:block;width:22px;height:2px;background:var(--navy);margin:5px auto;transition:transform .2s,opacity .2s}
+.menu-btn[aria-expanded=true] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-btn[aria-expanded=true] span:nth-child(2){opacity:0}
+.menu-btn[aria-expanded=true] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* 히어로 */
+.hero{position:relative;background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff;overflow:hidden}
+.hero-in{position:relative;z-index:1;padding:96px 24px 200px}
+.hero-sig{height:44px;width:auto;display:block;margin-bottom:40px}
+.hero .kicker{font-size:18px;font-weight:600;color:var(--sky-pale);margin-bottom:16px}
+.hero h1{color:#fff;font-size:clamp(34px,6vw,64px);font-weight:800;letter-spacing:-.04em;line-height:1.18}
+.hero .lead{margin-top:24px;font-size:clamp(18px,2vw,22px);font-weight:500;color:rgba(255,255,255,.86);max-width:34em}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.hero-note{margin-top:16px;font-size:15px;color:rgba(255,255,255,.7)}
+.landscape{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:220px;display:block}
+.land-wave{animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-60px)}}
+@media (prefers-reduced-motion:reduce){.land-wave{animation:none}html{scroll-behavior:auto}}
+
+/* 핵심 정보 */
+.facts{position:relative;z-index:2;margin-top:-8px}
+.facts dl{display:grid;grid-template-columns:repeat(4,1fr);margin:0;border-top:3px solid var(--navy);border-bottom:1px solid var(--line)}
+.facts dl div{padding:24px 24px 28px;border-left:1px solid var(--line)}
+.facts dl div:first-child{border-left:0}
+.facts dt{font-size:14px;font-weight:600;color:var(--t3)}
+.facts dd{margin:6px 0 0;font-size:19px;font-weight:700;color:var(--t1);line-height:1.45}
+
+/* 섹션 공통 */
+section.sec{padding:112px 0}
+section.alt{background:var(--bg-light)}
+.sec-head{max-width:720px;margin-bottom:56px}
+.sec-head h2{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.035em}
+.sec-head p{margin-top:16px;font-size:clamp(17px,1.8vw,20px);color:var(--t3)}
+
+/* 소개 */
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:64px;align-items:start}
+.about-text p+p{margin-top:16px}
+.about-text strong{color:var(--navy)}
+.who{margin:32px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.who li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.who li::before{content:"";flex:none;width:18px;height:10px;margin-top:.45em;border-left:2.5px solid var(--green-web);border-bottom:2.5px solid var(--green-web);transform:rotate(-45deg) scale(.8)}
+.org{margin:0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+.org figcaption{font-size:14px;color:var(--t3);padding:12px 8px 4px}
+.org .scroll{overflow-x:auto}
+.org svg{display:block;width:100%;height:auto}
+@media (max-width:720px){.org svg{min-width:560px}}
+
+/* 교육과정 */
+.course{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.course article{padding:32px 32px 40px 0;border-bottom:1px solid var(--line)}
+.course article+article{padding-left:32px;border-left:1px solid var(--line)}
+.course .stage{display:inline-block;font-size:14px;font-weight:700;padding:4px 12px;border-radius:999px;color:#fff;background:var(--c)}
+.course h3{margin-top:16px;font-size:23px;font-weight:800}
+.course p{margin-top:12px;color:var(--t3)}
+.course ul{margin:20px 0 0;padding:0;list-style:none}
+.course li{position:relative;padding-left:18px;margin-top:8px}
+.course li::before{content:"";position:absolute;left:0;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--c)}
+.tools{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.tools span.lbl{font-weight:700;color:var(--t1);margin-right:8px}
+.tools span.tag{font-size:15px;padding:6px 14px;border-radius:999px;background:#fff;border:1px solid var(--line)}
+.note{margin-top:24px;font-size:14px;color:var(--t3)}
+
+/* 혜택 */
+.benefit{display:grid;grid-template-columns:repeat(2,1fr);gap:0 64px;margin:0;padding:0;list-style:none}
+.benefit li{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:28px 0;border-top:1px solid var(--line)}
+.benefit .ic{width:56px;height:56px;border-radius:14px;background:var(--bg-light);display:grid;place-items:center;color:var(--navy)}
+.benefit .ic svg{width:28px;height:28px}
+.benefit h3{font-size:20px;font-weight:700}
+.benefit p{margin-top:6px;color:var(--t3)}
+
+/* 참여 과정 */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);counter-reset:s;position:relative}
+.steps::before{content:"";position:absolute;left:28px;right:calc(20% - 28px);top:27px;height:2px;background:linear-gradient(90deg,var(--green),var(--sky),var(--navy))}
+.steps li{counter-increment:s;position:relative;padding-right:16px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid var(--navy);color:var(--navy);font-weight:800;font-size:20px;position:relative}
+.steps li:first-child::before{background:var(--green-web);border-color:var(--green-web);color:#fff}
+.steps h3{margin-top:20px;font-size:19px;font-weight:700}
+.steps p{margin-top:6px;font-size:15px;color:var(--t3)}
+
+/* 모집 안내 (신청 섹션) */
+.recruit{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff}
+.recruit .sec-head h2{color:#fff}
+.recruit .sec-head p{color:rgba(255,255,255,.78)}
+.recruit-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start}
+.rtable{width:100%;border-collapse:collapse}
+.rtable th,.rtable td{text-align:left;vertical-align:top;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.rtable th{width:112px;font-weight:600;color:var(--sky-pale);padding-right:16px}
+.apply-box{background:#fff;color:var(--t2);border-radius:20px;padding:36px}
+.apply-box h3{font-size:24px;font-weight:800}
+.apply-box p{margin-top:8px;color:var(--t3)}
+.dday{display:none;margin-top:20px;font-weight:700;color:var(--navy)}
+.dday.show{display:block}
+.dday.urgent{color:var(--red)}
+.apply-box .btn{width:100%;margin-top:24px;min-height:60px;font-size:19px}
+.apply-box small{display:block;margin-top:12px;font-size:14px;color:var(--t3)}
+
+/* 공유 */
+.share{padding:72px 0;border-bottom:1px solid var(--line)}
+.share-in{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.share h2{font-size:clamp(24px,3vw,30px);font-weight:800}
+.share p{margin-top:8px;color:var(--t3)}
+.share-btns{display:flex;flex-wrap:wrap;gap:8px}
+.share-btns .btn{min-height:48px;padding:0 18px;font-size:16px}
+.toast{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);background:var(--t1);color:#fff;padding:12px 20px;border-radius:10px;font-size:15px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:80}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* FAQ */
+.faq{max-width:840px;border-top:2px solid var(--navy)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 4px;font-weight:700;font-size:18px;color:var(--t1)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q";color:var(--sky-web);font-weight:800;margin-right:4px}
+.faq summary span{flex:1}
+.faq summary i{flex:none;width:14px;height:14px;border-right:2px solid var(--t3);border-bottom:2px solid var(--t3);transform:rotate(45deg);transition:transform .2s;margin-top:-6px}
+.faq details[open] summary i{transform:rotate(-135deg);margin-top:6px}
+.faq .ans{padding:0 4px 24px 26px;color:var(--t3)}
+
+/* 오시는 길 */
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.loc dl{margin:0}
+.loc dl div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.loc dt{font-weight:700;color:var(--navy)}
+.loc dd{margin:0}
+.loc .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.loc .btns .btn{min-height:48px;font-size:16px;padding:0 18px}
+.mapcard{border-radius:16px;overflow:hidden;background:var(--bg-light);border:1px solid var(--line)}
+.mapcard svg{display:block;width:100%;height:auto}
+
+/* 푸터 */
+footer.site{background:#0F1E3D;color:rgba(255,255,255,.72);font-size:15px;padding:56px 0 96px}
+.ft{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.ft img{height:44px;width:auto;display:block;margin-bottom:20px}
+.ft p{margin-top:4px}
+.ft ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 20px}
+.ft ul a{text-decoration:none}
+.ft ul a:hover{color:#fff;text-decoration:underline}
+.copy{margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:rgba(255,255,255,.5)}
+
+/* 모바일 하단 신청 바 */
+.mbar{display:none}
+
+@media (max-width:1180px){
+  .gnb{display:none}
+  .menu-btn{display:block}
+  .hd-actions .btn{display:none}
+  .gnb.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:77px;background:#fff;padding:12px 16px 20px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,50,136,.08)}
+  .gnb.open a{padding:14px 12px;font-size:17px}
+}
+@media (max-width:1024px){
+  .menu-btn{display:block}
+  .hd-actions .btn{display:none}
+  .gnb.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:77px;background:#fff;padding:12px 16px 20px;border-bottom:1px solid var(--line);box-shadow:0 12px 24px rgba(0,50,136,.08)}
+  .gnb.open a{padding:14px 12px;font-size:17px}
+  .facts dl{grid-template-columns:repeat(2,1fr)}
+  .facts dl div:nth-child(3){border-left:0}
+  .facts dl div:nth-child(n+3){border-top:1px solid var(--line)}
+  .about-grid,.recruit-grid,.loc-grid{grid-template-columns:minmax(0,1fr);gap:40px}
+  .course{grid-template-columns:1fr}
+  .course article,.course article+article{padding:28px 0;border-left:0}
+  .steps{grid-template-columns:1fr;gap:0}
+  .steps::before{left:27px;right:auto;top:28px;bottom:28px;width:2px;height:auto;background:linear-gradient(180deg,var(--green),var(--sky),var(--navy))}
+  .steps li{display:grid;grid-template-columns:56px 1fr;column-gap:20px;padding:0 0 28px}
+  .steps li::before{grid-row:1/3}
+  .steps::before{display:none}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:27px;top:56px;bottom:0;width:2px;background:var(--sky)}
+  .steps li:last-child{padding-bottom:0}
+  .steps h3{margin-top:12px}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  section.sec{padding:80px 0}
+  .sec-head{margin-bottom:40px}
+  .brand img{height:32px}
+  .brand b{font-size:14px}
+  .hd{height:64px}
+  .gnb.open{top:69px}
+  .hero-in{padding:64px 24px 160px}
+  .hero-sig{height:36px;margin-bottom:32px}
+  .hero h1 br{display:none}
+  .hero-cta .btn{flex:1 1 100%}
+  .landscape{height:150px}
+  .facts dl div{padding:18px 16px 20px}
+  .facts dd{font-size:17px}
+  .benefit{grid-template-columns:1fr}
+  .apply-box{padding:28px 24px}
+  .rtable th{width:88px}
+  .mbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+  .mbar .btn{flex:1;min-height:50px}
+  .mbar .btn-ghost{flex:0 0 auto}
+  .toast{bottom:100px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+
+<div class="strip" aria-hidden="true"></div>
+<header class="site">
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="제주대학교 첨단인재양성 부트캠프 처음으로">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNjgnIGhlaWdodD0nNjMnIHZpZXdCb3g9JzAgMCAxNjggNjMnPjxwYXRoIGQ9J00xMjUuNjExLDI4YzAsMi42NTcsMi43NjQsNC44MTQsNi4xNzEsNC44MTRzNi4xNzQtMi4xNTgsNi4xNzQtNC44MTRhNC4zMzksNC4zMzksMCwwLDAtMS44MzQtMy40MjRoMi4zNTFWMjIuNjg3aC00LjhWMjAuNTE2SDEyOS45djIuMTcySDEyNS4xdjEuODg1aDIuMzQyQTQuMzY2LDQuMzY2LDAsMCwwLDEyNS42MTEsMjhtNi4xNzEtMy4wMzhBMi44NTMsMi44NTMsMCwwLDEsMTM0LjQsMjhhMi42NTEsMi42NTEsMCwxLDEtNS4yNDUsMCwyLjg1NSwyLjg1NSwwLDAsMSwyLjYyMy0zLjAzOG0tNS40NTcsMjYuNDczaDEuMTA5di0zLjg5bDIuMzA4LDMuODloMS4xVjQ1Ljg3NWgtMS4xMXYzLjg1N2wtMi4zMTYtMy44NTdoLTEuMDlabS0xOC4wMTYtMS4wOUgxMTAuM2wuNDE3LDEuMDlIMTExLjlsLTIuMDQzLTUuNTU2aC0xLjEwOGwtMi4wNDEsNS41NTZIMTA3LjlabTEtMy4wMy43ODEsMi40MDhoLTEuNTY5Wk0xMDMuNiwzNC42OTJhMi43ODgsMi43ODgsMCwwLDAsMS44ODcuNmg1LjAyOGE2LjIsNi4yLDAsMCwwLDEuNzQ3LS4yMTVjLjQ3Ni0uMTQyLjktLjI4MywxLjUtLjUxOHY3LjRoMy41NDlWMjguN2gxLjY2N3YxMy4yNmgzLjU0OFYyMS4wODVoLTMuNTQ4djUuNjcyaC0xLjY2N1YyMS4wODVIMTEzLjc2djExLjczYTEwLjMzMiwxMC4zMzIsMCwwLDEtMS40NDguNCw4LjM1NSw4LjM1NSwwLDAsMS0xLjY2LjE0MmgtNC4wNlYyMy44MDZoNS4zNFYyMS44NjdoLTkuMDI2VjMzLjA3OGEyLjA0MSwyLjA0MSwwLDAsMCwuNjkyLDEuNjEzbTQwLjczMy02LjU2NWgzLjA0VjI2LjE4NWgtMy4wNFYyMS4wNWgtMy43NDhWMzMuNDI5aDMuNzQ4Wk02Ny41NDEsNDUuODc1djQuMDY4YTEuMzI1LDEuMzI1LDAsMCwwLC41NTMsMS4xODEsNC4yODYsNC4yODYsMCwwLDAsMy40ODksMCwxLjMxNywxLjMxNywwLDAsMCwuNTQ4LTEuMTgxVjQ1Ljg3NWgtMS4xNlY1MGEuNjY2LjY2NiwwLDAsMS0uMjc1LjU5LDIuMDMyLDIuMDMyLDAsMCwxLTEuNzEyLDBBLjY2My42NjMsMCwwLDEsNjguNyw1MFY0NS44NzVabTUyLjU3NSwwdjQuMDY4YTEuMzIsMS4zMiwwLDAsMCwuNTUsMS4xODEsNC4yODEsNC4yODEsMCwwLDAsMy40ODcsMCwxLjMxOSwxLjMxOSwwLDAsMCwuNTUyLTEuMTgxVjQ1Ljg3NWgtMS4xNlY1MGEuNjY5LjY2OSwwLDAsMS0uMjc2LjU5LDEuNTI3LDEuNTI3LDAsMCwxLS44NTMuMTg5LDEuNTU2LDEuNTU2LDAsMCwxLS44Ni0uMTg5LjY2NC42NjQsMCwwLDEtLjI4MS0uNTlWNDUuODc1Wm00NS45NjQsMC0uNzMyLDEuNTUzYTMuOSwzLjksMCwwLDAtLjE3MS40MjRjLS4wNTEuMTQ3LS4wOTIuMy0uMTM4LjQ1OWE1LjE3NCw1LjE3NCwwLDAsMC0uMTUyLS41MDYsMi44NTgsMi44NTgsMCwwLDAtLjE1Mi0uMzgyTDE2NCw0NS44NzVoLTEuMjE4bDEuNjUsMy4xOXYyLjM2NmgxLjIxVjQ5LjA2NWwxLjY1OS0zLjE5Wm0tNTMuMTU3LDB2NS41NTZoMy43di0uN0gxMTQuMVY0NS44NzVaTTE2OCwzOS4xNzNoLTcuNDQ1VjMwLjUxNmgtMy42MDZ2OC42NTdoLTEuODU3VjMwLjUxNmgtMy42MDl2OC42NTdIMTQ3LjcydjEuOTE4SDE2OFptLTUuNDc1LTguOTZjMCwxLjU2My0uMDQ3LDIuODUyLS4xNSwzLjg1N2E1LjY0Myw1LjY0MywwLDAsMS0uODc1LDIuNmgzLjMwN2E3Ljg0OSw3Ljg0OSwwLDAsMCwxLjAzNC0yLjU0NCwxNi4xNTEsMTYuMTUxLDAsMCwwLC4zNzMtMy42NlYyMS45ODVIMTQ5LjY1NHYxLjk0MmgxMi44N1pNMTQ2Ljg3OCw0NS44NzVoLTEuNDA2djUuNTU2aDEuMTdWNDguNzE3aC4wMjhsMi4wMDUsMi43MTRoMS4yNmwtMi4wODEtMi43MzhhMi4xOTEsMi4xOTEsMCwwLDAsMS4yMzYtLjQwOCwxLjE5MSwxLjE5MSwwLDAsMCwuNDEyLS45NjIsMS4xNzcsMS4xNzcsMCwwLDAtLjYtMS4xMTQsNC40Niw0LjQ2LDAsMCwwLTIuMDI0LS4zMzNtMS4xMzgsMi4yYTEuODEsMS44MSwwLDAsMS0xLjAxNi4yMTNoLS4zNThWNDYuNTMzaC4zMjRhMi4yODksMi4yODksMCwwLDEsMS4wNjYuMTcxLjY1OS42NTksMCwwLDEsLjI4NC42MTguODU5Ljg1OSwwLDAsMS0uMy43NW0xMi44MDUsMy4zNThWNDYuNTcxaDEuNjE4di0uN2gtNC40Mjd2LjdoMS42MnY0Ljg1OVpNMTUzLDUwLjU3MmExLjU4LDEuNTgsMCwwLDEtLjg1NC4yLDMuMDIxLDMuMDIxLDAsMCwxLS42NjItLjA3OSw1LjM0MSw1LjM0MSwwLDAsMS0uNzY2LS4yMzd2Ljc2MmE1LjA2Niw1LjA2NiwwLDAsMCwuNzczLjIwOSw0LjMxMiw0LjMxMiwwLDAsMCwuNzM4LjA2OSwyLjk2OSwyLjk2OSwwLDAsMCwxLjYzOS0uNDEyLDEuMjMxLDEuMjMxLDAsMCwwLC42MzUtMS4wNTEsMS4yLDEuMiwwLDAsMC0uMzExLS44MTEsMy41MjgsMy41MjgsMCwwLDAtMS4wNTQtLjczNmMtLjA0MS0uMDE5LS4xLS4wNTItLjE4My0uMDk0LS44NTctLjQzNS0xLjI4NC0uODEyLTEuMjg0LTEuMTM0QS42MzMuNjMzLDAsMCwxLDE1Miw0Ni43YTEuNjU3LDEuNjU3LDAsMCwxLC44ODgtLjIxLDIuOCwyLjgsMCwwLDEsLjY0Mi4wNzcsMy4zNzYsMy4zNzYsMCwwLDEsLjY2Mi4yMjd2LS43NTFhNC43MjEsNC43MjEsMCwwLDAtLjc0MS0uMTkyLDUuNDA5LDUuNDA5LDAsMCwwLS43ODItLjA1OCwyLjY4LDIuNjgsMCwwLDAtMS41NDcuNDIxLDEuMjI4LDEuMjI4LDAsMCwwLS42MjYsMS4wNDYsMS4xMjksMS4xMjksMCwwLDAsLjMxLjc4MiwzLjkyNSwzLjkyNSwwLDAsMCwxLjA4Ny43NTdjLjA0NC4wMjcuMTE3LjA2Mi4yMTIuMTEzcTEuMjExLjYzMiwxLjIxLDEuMTIzYS42LjYsMCwwLDEtLjMxOC41MzJtMi43ODEuODU4aDEuMTcxVjQ1Ljg3NWgtMS4xNzFabS02Ni4yNzYsMFY0Ni41NzFoMS42MTh2LS43SDg2Ljd2LjdoMS42MTZ2NC44NTlabTU0LjU3NC00Ljg4NXYtLjY3SDE0MC42djUuNTU2aDMuNDgxdi0uN0gxNDEuNzdWNDguODU0aDIuMTE1di0uNjU5SDE0MS43N1Y0Ni41NDVabS0xMC4zNzUtLjY3aC0xLjE2OXY1LjU1NkgxMzMuN1ptMi4yNTIsMGgtMS4xODhsMS45MTIsNS41NTZoLjk5M2wxLjkxNS01LjU1NmgtMS4xNzlsLTEuMjI2LDMuNzdabTguMzc0LTExLjUyN0gxMjcuMnYxLjkxNmgxMy4zNzh2NS42NjFoMy43NDhaTTU3LjU3OCwzMS43MTVhNS41OTQsNS41OTQsMCwwLDEtMy40NTIsMi42bDEuNzIsMS4zMTFhNi4wMSw2LjAxLDAsMCwwLDMuMTM0LTEuNDkxLDQuODg5LDQuODg5LDAsMCwwLDEuODA2LTIuNiw1LjA3OCw1LjA3OCwwLDAsMCwxLjgxNiwyLjZBNS45NTYsNS45NTYsMCwwLDAsNjUuNywzNS42MjZsMS42NjktMS4yNjZ2Ny42aDMuNTIxVjIxLjA4NUg2Ny4zNjR2NS43MDhINjQuMjg2djEuOTQyaDMuMDc4djUuMzU0YTUuMzcxLDUuMzcxLDAsMCwxLTMuMzg5LTIuMzk1LDkuMDQ4LDkuMDQ4LDAsMCwxLTEuMzU5LTUuMDIxVjIzLjY4MWgzLjAyOFYyMS43NjdINTUuMzU2djEuOTE0SDU4LjkzdjIuOTkxYTkuMDg5LDkuMDg5LDAsMCwxLTEuMzUyLDUuMDQzbTE4LjY3NCwxNC4xNnY1LjU1NmgxLjExNHYtMy44OWwyLjMwNiwzLjg5aDEuMVY0NS44NzVINzkuNjZ2My44NTdsLTIuMzE4LTMuODU3Wk01NS40MzEsNTEuNTA5YTIuMTMyLDIuMTMyLDAsMCwwLDEuMzczLS4zNzFBMS40MDYsMS40MDYsMCwwLDAsNTcuMjUsNTB2LTQuMTJINTYuMDc2djQuMTQxYS43NzQuNzc0LDAsMCwxLS4yMDguNTkzLjk1NC45NTQsMCwwLDEtLjY1MS4xODksMS44LDEuOCwwLDAsMS0uNS0uMDc1LDIuNjcsMi42NywwLDAsMS0uNTM0LS4yMzF2Ljc2OGEyLjk1MywyLjk1MywwLDAsMCwuNi4xODYsMy4yNDIsMy4yNDIsMCwwLDAsLjY0MS4wNjJNNzUuODc5LDIxLjA4NUg3Mi4zNThWNDEuOTY0aDMuNTIxWk02Mi4zNiw0Ni41NDV2LS42N0g1OC44ODJ2NS41NTZINjIuMzZ2LS43SDYwLjA1MVY0OC44NTRoMi4xMTN2LS42NTlINjAuMDUxVjQ2LjU0NVpNODQuOTc0LDI3LjY4YTEwLjEyMywxMC4xMjMsMCwwLDEtNS41MzUsMS43NDdMODAuOTA4LDMwLjlhMTQuNDkzLDE0LjQ5MywwLDAsMCw1LjI2Mi0xLjA2Miw2LjIsNi4yLDAsMCwwLDMuMzQxLTIuNTcyLDYuNDg1LDYuNDg1LDAsMCwwLDMuMzcsMi41NjFBMTQuMjc2LDE0LjI3NiwwLDAsMCw5OC4xMTQsMzAuOWwxLjQ3LTEuNDY5YTEwLjE2MSwxMC4xNjEsMCwwLDEtNS41MjMtMS43NDdROTEuNCwyNS45NTMsOTEuNCwyMy42NTl2LS4xMjhoNi43OTNWMjEuNTg5SDgwLjgzMXYxLjk0Mmg2Ljc5NHYuMTI4cTAsMi4yOS0yLjY1MSw0LjAyMW0xNC4yLDIzLjE1NmEzLjI5MSwzLjI5MSwwLDAsMCwuNTc4LTIuMTg1LDMuMzIyLDMuMzIyLDAsMCwwLS41NzgtMi4yLDMuMDQ1LDMuMDQ1LDAsMCwwLTMuNzg4LjAwNSwzLjMyMSwzLjMyMSwwLDAsMC0uNTgyLDIuMTkxLDMuMjksMy4yOSwwLDAsMCwuNTgyLDIuMTg1LDMuMDQ2LDMuMDQ2LDAsMCwwLDMuNzg4LDBNOTYuMjg5LDUwLjNhMy4zNjgsMy4zNjgsMCwwLDEtLjMtMS42NjIsMy4zNzQsMy4zNzQsMCwwLDEsLjMtMS42NjYsMS4yODEsMS4yODEsMCwwLDEsMS45OSwwLDMuNDE3LDMuNDE3LDAsMCwxLC4yOTEsMS42NjgsMy40NCwzLjQ0LDAsMCwxLS4yODYsMS42ODcsMS4wNjIsMS4wNjIsMCwwLDEtLjk4My40NiwxLjEsMS4xLDAsMCwxLTEuMDA2LS40ODVtOC4zMTksMS4xMzJoMS4xVjQ1Ljg3NUgxMDQuNnYzLjg1N2wtMi4zMTgtMy44NTdoLTEuMDg1djUuNTU2SDEwMi4zdi0zLjg5Wm0tMjIuODMzLDBoMS4xOWwuNC0xLjA5aDEuOTg3bC40MiwxLjA5aDEuMTg5bC0yLjA0My01LjU1Nkg4My44MTdabTMuMzgtMS43MTJoLTEuNTdsLjc4Ny0yLjQwOFptNywxLjcxMmgxLjE3M1Y0NS44NzVIOTIuMTZabS00LjUwOS05LjQ2N0g5MS40VjM0LjcyNmg4Ljg0OVYzMi44MUg3OC43NzV2MS45MTZoOC44NzZaTTY1LjQ4Nyw1MS4xMzhBMS40LDEuNCwwLDAsMCw2NS45MzQsNTB2LTQuMTJINjQuNzYzdjQuMTQxYS43Ny43NywwLDAsMS0uMjA5LjU5My45NDYuOTQ2LDAsMCwxLS42NS4xODksMS44MTIsMS44MTIsMCwwLDEtLjUtLjA3NSwyLjY1OSwyLjY1OSwwLDAsMS0uNTM2LS4yMzF2Ljc2OGEzLjA2OCwzLjA2OCwwLDAsMCwuNjA3LjE4NiwzLjE3OSwzLjE3OSwwLDAsMCwuNjM5LjA2MiwyLjEwNywyLjEwNywwLDAsMCwxLjM2OS0uMzcxJyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTE0LjAxNCwyMC4yNzhDMTIuNzQyLDIzLjI5MSw4LjcsMjguMzMsOC43LDI4LjMzYy0yLjEsMi43NTEtNC41ODYsNi4yLTUuNDYyLDEwLjc2NUMxLjM4NSw1MS43MjIsOS4yNjUsNTguMjI4LDE0LjEsNjAuMDU5QTE3LjEsMTcuMSwwLDAsMSw1LjIwNiw0MS44NjdjLjc4NC0zLjg3MiwyLjg2NC03Ljg1LDcuNTg4LTEyLjkxLDAsMCw1LjU3My01Ljc4Niw2LjMyNi0xMC44MTJBMTcuNjYzLDE3LjY2MywwLDAsMCwxMS4zMzQsMGExOS4yODUsMTkuMjg1LDAsMCwxLDIuNjgxLDIwLjI3OCcgZmlsbD0nIzY0YTkxYycvPjxwYXRoIGQ9J00yMC44NjUsMjIuMTkyYy0xLjY1LDMuOTMxLTUuOTcxLDcuODcxLTUuOTcxLDcuODcxLTYuODIyLDYuNTUzLTcuNywxMC40NC03LjcsMTAuNDRBMTYuNTEsMTYuNTEsMCwwLDAsOC44Niw1NC4zMmExNC42MzQsMTQuNjM0LDAsMCwwLDguOTU5LDYuNDU3LDExLjc3NiwxMS43NzYsMCwwLDEtNy45Ny0xMC4zNDVjLS4yODktMy45LDEuOTA4LTguODQ4LDguMjYtMTMuODIzYTM1LjExNSwzNS4xMTUsMCwwLDAsNS42ODgtNS43NCwxOC45ODEsMTguOTgxLDAsMCwwLDMuNTkyLTguNTYsMjAuMzEyLDIwLjMxMiwwLDAsMC0xLjE3Mi05Ljk5MSwyMS43LDIxLjcsMCwwLDAtNS42Ni04LjQ4NGM0LjgzNSw5LjI4OS4zMDksMTguMzU5LjMwOSwxOC4zNTknIGZpbGw9JyNiMGJjYzInLz48cGF0aCBkPSdNNDQuNDkxLDQyLjc1MlYyMS4xMDlIMzUuODc2VjQ1LjI0M2MtLjAyNiwxLjY3NS0uMTczLDMuNTQ3LS4xNzMsMy41NDdhMTEuNCwxMS40LDAsMCwxLS44OTIsMy45MjEsMTMuNDE4LDEzLjQxOCwwLDAsMS01LjA3OCw2LjE1NWMtOC45ODksNi4wMzgtMTcuOTc4LDEuMDQzLTE3Ljk3OCwxLjA0MywxMS4yMzYsNi42MzUsMjIuMTcyLjUyMiwyMi4xNzIuNTIyLDcuNy00LjQ0LDkuNzk1LTEwLjQ4MSwxMC4zNjItMTMuNzMxYTMwLjU0OSwzMC41NDksMCwwLDAsLjItMy45NDgnIGZpbGw9JyMwMDMyODgnLz48cGF0aCBkPSdNMTAuMDA3LDU4LjUzOUExOS40MzEsMTkuNDMxLDAsMCwxLDIuNzcsNDguNjIxYTIyLjkyLDIyLjkyLDAsMCwxLS43MzMtMTAuNDUsMjcuMDI5LDI3LjAyOSwwLDAsMSwyLjYtNy40LDQxLjMyMSw0MS4zMjEsMCwwLDEsMy00LjUxN0E0MS4xMzIsNDEuMTMyLDAsMCwwLDEwLjE3NSwyMi4zLDEyLjc3LDEyLjc3LDAsMCwwLDkuMTQxLDguMDU3czIuMjQzLDUuNzc2LS42ODYsMTEuMTU1YzAsMC0xLjM3NywyLjM1LTIuODczLDQuNTc4LDAsMC0zLjI4OCw0LjczOC00LjI1LDcuOTUzQTIzLjQ4NywyMy40ODcsMCwwLDAsLjU4OSw0NC44N3MxLjU1Niw5LjM1Niw5LjQxOCwxMy42NjknIGZpbGw9JyMwMDk5ZTcnLz48cGF0aCBkPSdNMTguOTcyLDU4LjA4OVY1NS40aC0uNTMxdi0uMzY5aDEuMDcxdjMuMDZaJyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTIxLjc1Myw1NS45NjVhLjguOCwwLDAsMC0uMTA4LS40NjYuMzk0LjM5NCwwLDAsMC0uMzQxLS4xNDguMzY3LjM2NywwLDAsMC0uMzIyLjE0Ni44NzEuODcxLDAsMCwwLS4xLjQ3My44NS44NSwwLDAsMCwuMS40NzUuMzg4LjM4OCwwLDAsMCwuMzM1LjEzNC4zODIuMzgyLDAsMCwwLC4zMzUtLjE0Ni44MjguODI4LDAsMCwwLC4xLS40NjhtLS4xLjhhLjc1Ni43NTYsMCwwLDEtLjIzLjExNi44MDkuODA5LDAsMCwxLS4yNTkuMDM4Ljc5Ljc5LDAsMCwxLS42MTktLjIxNiwxLjQsMS40LDAsMCwxLC4wNDQtMS40NzguOTgxLjk4MSwwLDAsMSwuNzMzLS4yNDUuOTM3LjkzNywwLDAsMSwuNzE5LjI1OSwxLjEzMiwxLjEzMiwwLDAsMSwuMjM2Ljc4MiwyLjEsMi4xLDAsMCwxLS4yLjg1OCw3LjAwNyw3LjAwNywwLDAsMS0uNzczLDEuMjA3aC0uNjI4cS40MTItLjUxMi42MTktLjhjLjEzOC0uMTg5LjI1Ni0uMzYyLjM1NS0uNTIzJyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTIyLjc3MSw1Ny42MmExLjMsMS4zLDAsMCwwLC4yNzguMTA1LDEuMiwxLjIsMCwwLDAsLjI5Mi4wMzYuNzg1Ljc4NSwwLDAsMCwuNTc1LS4xODkuNzM4LjczOCwwLDAsMCwuMTkzLS41NTguNDg3LjQ4NywwLDAsMC0uMi0uNDIyLDEuMDE3LDEuMDE3LDAsMCwwLS41ODYtLjEzOWMtLjEwNiwwLS4xOTQsMC0uMjY5LjAwOWEyLjE3NiwyLjE3NiwwLDAsMC0uMjIzLjAzMmwuMjg0LTEuNDY0aDEuNVY1NS40SDIzLjU3MmwtLjE2OC43NDYuMTUzLS4wMTdjLjA0NiwwLC4wODcsMCwuMTIyLDBhMS4wMSwxLjAxLDAsMCwxLC43MDguMjQ1Ljg0Ni44NDYsMCwwLDEsLjI2OC42NTMsMS4wMjUsMS4wMjUsMCwwLDEtLjMyNy44MTEsMS4zMTcsMS4zMTcsMCwwLDEtLjkxLjI5MSwyLjI2LDIuMjYsMCwwLDEtLjQwOC0uMDM2LDIuMDY5LDIuMDY5LDAsMCwxLS4zODYtLjEwOVonIGZpbGw9JyMwMDMyODgnLz48cGF0aCBkPSdNMjUuMTE0LDU4LjA5bDEuMTQ3LTEuNjIyYTIuNDI3LDIuNDI3LDAsMCwwLC4yMjctLjQuODMuODMsMCwwLDAsLjA3NC0uMzI1LjQyNS40MjUsMCwwLDAtLjA5NC0uMy40MDYuNDA2LDAsMCwwLS4zLS4xLjM3NC4zNzQsMCwwLDAtLjMyLjEzLjc4MS43ODEsMCwwLDAtLjA5NC40NDJ2LjEwNmgtLjUzOWEuMjM2LjIzNiwwLDAsMS0uMDA2LS4wNTl2LS4xYS44My44MywwLDAsMSwuMjQ4LS42NTgsMS4wODQsMS4wODQsMCwwLDEsLjc0Mi0uMjIxLDEuMTE1LDEuMTE1LDAsMCwxLC43LjIuNjcxLjY3MSwwLDAsMSwuMjU1LjU1NSwxLjAzOSwxLjAzOSwwLDAsMS0uMS40MjgsMi42ODMsMi42ODMsMCwwLDEtLjMzNS41MjZsLS43NzcsMWgxLjEyM3YuMzg4WicgZmlsbD0nIzAwMzI4OCcvPjxwYXRoIGQ9J00yNi40NjEsNDguMDZ2My42ODNhMS4xOTQsMS4xOTQsMCwwLDAsLjUsMS4wNjksMi45LDIuOSwwLDAsMCwxLjU3Ni4zMzUsMi45MzMsMi45MzMsMCwwLDAsMS41OC0uMzM1LDEuMiwxLjIsMCwwLDAsLjUtMS4wNjlWNDguMDZIMjkuNTYyVjUxLjhhLjYuNiwwLDAsMS0uMjQ5LjUzNCwxLjg0OSwxLjg0OSwwLDAsMS0xLjU0OSwwLC41OTQuNTk0LDAsMCwxLS4yNTUtLjUzNFY0OC4wNlonIGZpbGw9JyMwMDMyODgnLz48cGF0aCBkPSdNMTUuNzA4LDUzLjE1OGExLjkyNCwxLjkyNCwwLDAsMCwxLjI0MS0uMzM0LDEuMjcsMS4yNywwLDAsMCwuNC0xLjAzNVY0OC4wNkgxNi4yOXYzLjc0OGEuNy43LDAsMCwxLS4xODcuNTM3Ljg1NC44NTQsMCwwLDEtLjU4OC4xNzIsMS42MzQsMS42MzQsMCwwLDEtLjQ0OS0uMDY5LDIuNDMsMi40MywwLDAsMS0uNDgzLS4yMDl2LjdhMi42NSwyLjY1LDAsMCwwLC41NDkuMTY4LDIuOTc3LDIuOTc3LDAsMCwwLC41NzcuMDU1JyBmaWxsPScjMDAzMjg4Jy8+PHBhdGggZD0nTTIxLjcwOSw0OC42Njl2LS42MDlIMTguNTU4djUuMDI5aDMuMTUxdi0uNjMxSDE5LjYxOXYtMS43aDEuOTEzdi0uNkgxOS42MTlWNDguNjY5WicgZmlsbD0nIzAwMzI4OCcvPjxwYXRoIGQ9J00yNC44NjMsNTIuODI0YTEuMjY3LDEuMjY3LDAsMCwwLC40LTEuMDM0VjQ4LjA2SDI0LjIwN3YzLjc0OWEuNy43LDAsMCwxLS4xODkuNTM2Ljg1NS44NTUsMCwwLDEtLjU4OS4xNzIsMS42NjksMS42NjksMCwwLDEtLjQ0OS0uMDY5LDIuMjY2LDIuMjY2LDAsMCwxLS40ODUtLjIwOXYuN2EyLjc0OSwyLjc0OSwwLDAsMCwuNTUuMTY4LDIuODc0LDIuODc0LDAsMCwwLC41OC4wNTUsMS45MDksMS45MDksMCwwLDAsMS4yMzgtLjMzNCcgZmlsbD0nIzAwMzI4OCcvPjxwYXRoIGQ9J00yMy4xOTMsNDYuNDQyYTEuOTg0LDEuOTg0LDAsMCwwLC45MTgtLjMwNWw1LjM0NS4zN1YzOS42NDJMMjguOSwzOS42MWwuMjQ3LjM4OHY2LjIxOWwtNS4xNC0uMzI5YTEuNTA3LDEuNTA3LDAsMCwxLTEuNzkxLDBsLTUuMTM4LjMyOVY0MGwuMjQ1LS4zODgtLjU1OC4wMzJ2Ni44NjVsNS4zNDYtLjM3YTEuOTcsMS45NywwLDAsMCwuOTE2LjMwNSwxLjQ3MSwxLjQ3MSwwLDAsMCwuMTY3LDAnIGZpbGw9JyNiMGJjYzInLz48cGF0aCBkPSdNMTcuOSwzOS4yMTljLS4xMTkuMTg2LS41MjguODI4LS41NDEuODQ1djUuNTc3Yy4xMi0uMi41My0uODc5LjU0MS0uOVonIGZpbGw9JyNiMGJjYzInLz48cGF0aCBkPSdNMjIuMjc1LDQ1LjZsLjAxNS4wMTRhMS4xOTEsMS4xOTEsMCwwLDAsLjYwOC4yODIsMS4xNzEsMS4xNzEsMCwwLDAtLjYtLjg4LDMuNzIyLDMuNzIyLDAsMCwwLTEuNjkxLS4yOTFjLS4zNTQsMC0uNzMyLjAyMS0xLjE2Mi4wNjNzLS44NTQuMS0xLjMuMTgzYy0uMDE5LjAzLS40OTUuODE5LS41NjcuOTM4LjE1OS0uMDA5LDQuNy0uMzA5LDQuNy0uMzA5JyBmaWxsPScjYjBiY2MyJy8+PHBhdGggZD0nTTI4Ljg2MSw0MC4wNjVsLS41NC0uODQ1djUuNTI2Yy4wMTEuMDE3LjQyLjcuNTQuOVonIGZpbGw9JyNiMGJjYzInLz48cGF0aCBkPSdNMjMuOTIsNDUuMDExYTEuMTgsMS4xOCwwLDAsMC0uNi44OCwxLjE4NywxLjE4NywwLDAsMCwuNjEtLjI4MmwuMDE0LS4wMTRzNC41NC4zLDQuNy4zMDljLS4wNzItLjExOS0uNTQ3LS45MDgtLjU2NS0uOTM4LS40NDgtLjA4LS44ODctLjE0Mi0xLjMtLjE4NHMtLjgwOC0uMDYyLTEuMTYxLS4wNjJhMy43MywzLjczLDAsMCwwLTEuNjkyLjI5MScgZmlsbD0nI2IwYmNjMicvPjxwYXRoIGQ9J00yNi43NjYsMzguNjMxYTEwLjk4MiwxMC45ODIsMCwwLDAtMS4yLS4wNjhsLS41MzYuMDIzLS40MDguMDYxYTIuMTQ0LDIuMTQ0LDAsMCwwLS43NDQuMjg3bC0uMDU4LjA0NEwyMy44LDM5YTEuODI2LDEuODI2LDAsMCwwLS41MjEuNTQ3djUuNmExLjMsMS4zLDAsMCwxLC4yODMtLjI3NiwzLjMyMSwzLjMyMSwwLDAsMSwxLjM1Mi0uNDIxbC4wMjQsMCwuMDI2LDBhNy45LDcuOSwwLDAsMSwxLS4wMzNsLjc0MS4wNTFjLjM3NS4wMzYuODEuMDkyLDEuMy4xNjRWMzguODI4Yy0uNDIxLS4wODctLjgzNi0uMTU0LTEuMjMtLjJtLjU0LDEuMjRhMi42NzUsMi42NzUsMCwwLDEtMS41NjcsMS41MDdzLjIwNS4wNDkuNjgyLjYxMmExLjk2NSwxLjk2NSwwLDAsMCwuNjIyLjUxNHMtLjY3MywxLjMyMS0uNzQsMS40NzdhMi45NDQsMi45NDQsMCwwLDEtLjgzLTEuMzA1LjIzNy4yMzcsMCwwLDAtLjIzNC0uMTIycy0uNTM1LjA1OS0uNzUzLjA3N2EuMi4yLDAsMCwxLS4yMTYsMGwtLjA3OS0uMDgzcy0uMDE5LjAwNS0uMDUyLS4wMjRhLjE3OS4xNzksMCwwLDEtLjA3My0uMTI4LjE0Mi4xNDIsMCwwLDEsLjA0NC0uMTEzLDcuOTIzLDcuOTIzLDAsMCwwLDEuMDU3LS44MzJzLS4wMDkuMDMxLjA0LS4wOTNhMS43MjgsMS43MjgsMCwwLDEtLjQyNy0uMTc3cy0uMTg4LS4xMjgtLjE4My0uMjk0bC4wNDQsMHMwLC4yLjM4Ny4zMThhLjg1NS44NTUsMCwwLDEtLjEyNy0uMjgyLjE4OC4xODgsMCwwLDEsLjA1NC0uMDEycy4xMS4zMjYuMy4zMzRjMCwwLC4zNjUtLjIyNC4zOTMtLjQ3NiwwLDAtLjE1Mi0uMDkzLS4yMTMtLjQ3M2wuMDUtLjAyOHMuMDYuMzU5LjI0LjM0OWMwLDAsLjE2MywwLC4yNjMtLjNhMS40NzIsMS40NzIsMCwwLDAsLjA3OS0uNSwxLjc2NSwxLjc2NSwwLDAsMC0uMDM3LS4yNDRsLjAzNy0uMDZhMS4wODMsMS4wODMsMCwwLDEsLjA0OS4xODQuNzY1Ljc2NSwwLDAsMSwuMTQzLS4zNjdsLjAzMy4wMThhLjY1Ny42NTcsMCwwLDAtLjA4Ny40LDEuODI3LDEuODI3LDAsMCwxLS4xMi42NDgsMi43LDIuNywwLDAsMS0uNjA1LjksNS40MTcsNS40MTcsMCwwLDAsLjc0MS0uMzZzLjIyMS0uMTM3LjI0Ny0uNjA3aC4wNThhMSwxLDAsMCwxLS4wMDcuMzgzLDEuNjExLDEuNjExLDAsMCwwLC42NzYtLjgyMi41MDguNTA4LDAsMCwwLS4wMTUtLjMzNGwuMDI0LS4wMzJhLjYuNiwwLDAsMSwuMDgyLjIzMi40MjMuNDIzLDAsMCwxLC4yNTItLjIzbC4wMTMuMDM1YS42MjEuNjIxLDAsMCwwLS4yNDMuMzE1JyBmaWxsPScjYjBiY2MyJy8+PHBhdGggZD0nTTIyLjQyMSwzOWwtLjAyMi0uMDE3LS4wNTktLjA0M2EyLjEyMSwyLjEyMSwwLDAsMC0uNzQyLS4yODhsLS40MTEtLjA2MS0uNTMzLS4wMjNhMTAuNywxMC43LDAsMCwwLTEuMi4wNjhjLS40LjA0My0uODExLjEwOS0xLjIzMS4ydjUuNzk1Yy40ODYtLjA3My45MjEtLjEyOSwxLjI5NS0uMTY0bC43NDMtLjA1MmE3Ljk4MSw3Ljk4MSwwLDAsMSwuOTkzLjAzNGwuMDMsMCwuMDI4LDBhMy4yODUsMy4yODUsMCwwLDEsMS4zNDcuNDI0LDEuMjUxLDEuMjUxLDAsMCwxLC4yODQuMjczdi01LjZBMS44MzEsMS44MzEsMCwwLDAsMjIuNDIxLDM5bS0uNzQ1LDQuNjc0SDE5LjZhNC42NzMsNC42NzMsMCwwLDAtLjMyMy0yLjQ4NGMuNDM2LS40ODguOTktMS4yMDksMS4yMzQtMS41MzN2MS45NGEuMzI4LjMyOCwwLDEsMCwuMjQzLDBWMzkuNjM3Yy4yMzYuMzE0LjgsMS4wNTIsMS4yNDYsMS41NDlhNC42NjgsNC42NjgsMCwwLDAtLjMyMSwyLjQ4NCcgZmlsbD0nI2IwYmNjMicvPjwvc3ZnPg==" alt="제주대학교">
+      <span class="brand-div" aria-hidden="true"></span>
+      <b>첨단인재양성<br>부트캠프</b>
+    </a>
+    <nav aria-label="주 메뉴">
+      <ul class="gnb" id="gnb">
+        <li><a href="#about">사업 소개</a></li>
+        <li><a href="#curriculum">교육과정</a></li>
+        <li><a href="#benefit">지원 혜택</a></li>
+        <li><a href="#process">참여 과정</a></li>
+        <li><a href="#recruit">모집 안내</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+        <li><a href="#location">오시는 길</a></li>
+      </ul>
+    </nav>
+    <div class="hd-actions">
+      <a class="btn btn-apply js-apply" href="#" target="_blank" rel="noopener">교육 신청하기</a>
+      <button class="menu-btn" id="menuBtn" aria-controls="gnb" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <!-- 히어로 -->
+  <section class="hero" id="top">
+    <div class="wrap hero-in">
+      <img class="hero-sig" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNjgnIGhlaWdodD0nNjMnIHZpZXdCb3g9JzAgMCAxNjggNjMnPjxwYXRoIGQ9J00xMjUuNjExLDI4YzAsMi42NTcsMi43NjQsNC44MTQsNi4xNzEsNC44MTRzNi4xNzQtMi4xNTgsNi4xNzQtNC44MTRhNC4zMzksNC4zMzksMCwwLDAtMS44MzQtMy40MjRoMi4zNTFWMjIuNjg3aC00LjhWMjAuNTE2SDEyOS45djIuMTcySDEyNS4xdjEuODg1aDIuMzQyQTQuMzY2LDQuMzY2LDAsMCwwLDEyNS42MTEsMjhtNi4xNzEtMy4wMzhBMi44NTMsMi44NTMsMCwwLDEsMTM0LjQsMjhhMi42NTEsMi42NTEsMCwxLDEtNS4yNDUsMCwyLjg1NSwyLjg1NSwwLDAsMSwyLjYyMy0zLjAzOG0tNS40NTcsMjYuNDczaDEuMTA5di0zLjg5bDIuMzA4LDMuODloMS4xVjQ1Ljg3NWgtMS4xMXYzLjg1N2wtMi4zMTYtMy44NTdoLTEuMDlabS0xOC4wMTYtMS4wOUgxMTAuM2wuNDE3LDEuMDlIMTExLjlsLTIuMDQzLTUuNTU2aC0xLjEwOGwtMi4wNDEsNS41NTZIMTA3LjlabTEtMy4wMy43ODEsMi40MDhoLTEuNTY5Wk0xMDMuNiwzNC42OTJhMi43ODgsMi43ODgsMCwwLDAsMS44ODcuNmg1LjAyOGE2LjIsNi4yLDAsMCwwLDEuNzQ3LS4yMTVjLjQ3Ni0uMTQyLjktLjI4MywxLjUtLjUxOHY3LjRoMy41NDlWMjguN2gxLjY2N3YxMy4yNmgzLjU0OFYyMS4wODVoLTMuNTQ4djUuNjcyaC0xLjY2N1YyMS4wODVIMTEzLjc2djExLjczYTEwLjMzMiwxMC4zMzIsMCwwLDEtMS40NDguNCw4LjM1NSw4LjM1NSwwLDAsMS0xLjY2LjE0MmgtNC4wNlYyMy44MDZoNS4zNFYyMS44NjdoLTkuMDI2VjMzLjA3OGEyLjA0MSwyLjA0MSwwLDAsMCwuNjkyLDEuNjEzbTQwLjczMy02LjU2NWgzLjA0VjI2LjE4NWgtMy4wNFYyMS4wNWgtMy43NDhWMzMuNDI5aDMuNzQ4Wk02Ny41NDEsNDUuODc1djQuMDY4YTEuMzI1LDEuMzI1LDAsMCwwLC41NTMsMS4xODEsNC4yODYsNC4yODYsMCwwLDAsMy40ODksMCwxLjMxNywxLjMxNywwLDAsMCwuNTQ4LTEuMTgxVjQ1Ljg3NWgtMS4xNlY1MGEuNjY2LjY2NiwwLDAsMS0uMjc1LjU5LDIuMDMyLDIuMDMyLDAsMCwxLTEuNzEyLDBBLjY2My42NjMsMCwwLDEsNjguNyw1MFY0NS44NzVabTUyLjU3NSwwdjQuMDY4YTEuMzIsMS4zMiwwLDAsMCwuNTUsMS4xODEsNC4yODEsNC4yODEsMCwwLDAsMy40ODcsMCwxLjMxOSwxLjMxOSwwLDAsMCwuNTUyLTEuMTgxVjQ1Ljg3NWgtMS4xNlY1MGEuNjY5LjY2OSwwLDAsMS0uMjc2LjU5LDEuNTI3LDEuNTI3LDAsMCwxLS44NTMuMTg5LDEuNTU2LDEuNTU2LDAsMCwxLS44Ni0uMTg5LjY2NC42NjQsMCwwLDEtLjI4MS0uNTlWNDUuODc1Wm00NS45NjQsMC0uNzMyLDEuNTUzYTMuOSwzLjksMCwwLDAtLjE3MS40MjRjLS4wNTEuMTQ3LS4wOTIuMy0uMTM4LjQ1OWE1LjE3NCw1LjE3NCwwLDAsMC0uMTUyLS41MDYsMi44NTgsMi44NTgsMCwwLDAtLjE1Mi0uMzgyTDE2NCw0NS44NzVoLTEuMjE4bDEuNjUsMy4xOXYyLjM2NmgxLjIxVjQ5LjA2NWwxLjY1OS0zLjE5Wm0tNTMuMTU3LDB2NS41NTZoMy43di0uN0gxMTQuMVY0NS44NzVaTTE2OCwzOS4xNzNoLTcuNDQ1VjMwLjUxNmgtMy42MDZ2OC42NTdoLTEuODU3VjMwLjUxNmgtMy42MDl2OC42NTdIMTQ3LjcydjEuOTE4SDE2OFptLTUuNDc1LTguOTZjMCwxLjU2My0uMDQ3LDIuODUyLS4xNSwzLjg1N2E1LjY0Myw1LjY0MywwLDAsMS0uODc1LDIuNmgzLjMwN2E3Ljg0OSw3Ljg0OSwwLDAsMCwxLjAzNC0yLjU0NCwxNi4xNTEsMTYuMTUxLDAsMCwwLC4zNzMtMy42NlYyMS45ODVIMTQ5LjY1NHYxLjk0MmgxMi44N1pNMTQ2Ljg3OCw0NS44NzVoLTEuNDA2djUuNTU2aDEuMTdWNDguNzE3aC4wMjhsMi4wMDUsMi43MTRoMS4yNmwtMi4wODEtMi43MzhhMi4xOTEsMi4xOTEsMCwwLDAsMS4yMzYtLjQwOCwxLjE5MSwxLjE5MSwwLDAsMCwuNDEyLS45NjIsMS4xNzcsMS4xNzcsMCwwLDAtLjYtMS4xMTQsNC40Niw0LjQ2LDAsMCwwLTIuMDI0LS4zMzNtMS4xMzgsMi4yYTEuODEsMS44MSwwLDAsMS0xLjAxNi4yMTNoLS4zNThWNDYuNTMzaC4zMjRhMi4yODksMi4yODksMCwwLDEsMS4wNjYuMTcxLjY1OS42NTksMCwwLDEsLjI4NC42MTguODU5Ljg1OSwwLDAsMS0uMy43NW0xMi44MDUsMy4zNThWNDYuNTcxaDEuNjE4di0uN2gtNC40Mjd2LjdoMS42MnY0Ljg1OVpNMTUzLDUwLjU3MmExLjU4LDEuNTgsMCwwLDEtLjg1NC4yLDMuMDIxLDMuMDIxLDAsMCwxLS42NjItLjA3OSw1LjM0MSw1LjM0MSwwLDAsMS0uNzY2LS4yMzd2Ljc2MmE1LjA2Niw1LjA2NiwwLDAsMCwuNzczLjIwOSw0LjMxMiw0LjMxMiwwLDAsMCwuNzM4LjA2OSwyLjk2OSwyLjk2OSwwLDAsMCwxLjYzOS0uNDEyLDEuMjMxLDEuMjMxLDAsMCwwLC42MzUtMS4wNTEsMS4yLDEuMiwwLDAsMC0uMzExLS44MTEsMy41MjgsMy41MjgsMCwwLDAtMS4wNTQtLjczNmMtLjA0MS0uMDE5LS4xLS4wNTItLjE4My0uMDk0LS44NTctLjQzNS0xLjI4NC0uODEyLTEuMjg0LTEuMTM0QS42MzMuNjMzLDAsMCwxLDE1Miw0Ni43YTEuNjU3LDEuNjU3LDAsMCwxLC44ODgtLjIxLDIuOCwyLjgsMCwwLDEsLjY0Mi4wNzcsMy4zNzYsMy4zNzYsMCwwLDEsLjY2Mi4yMjd2LS43NTFhNC43MjEsNC43MjEsMCwwLDAtLjc0MS0uMTkyLDUuNDA5LDUuNDA5LDAsMCwwLS43ODItLjA1OCwyLjY4LDIuNjgsMCwwLDAtMS41NDcuNDIxLDEuMjI4LDEuMjI4LDAsMCwwLS42MjYsMS4wNDYsMS4xMjksMS4xMjksMCwwLDAsLjMxLjc4MiwzLjkyNSwzLjkyNSwwLDAsMCwxLjA4Ny43NTdjLjA0NC4wMjcuMTE3LjA2Mi4yMTIuMTEzcTEuMjExLjYzMiwxLjIxLDEuMTIzYS42LjYsMCwwLDEtLjMxOC41MzJtMi43ODEuODU4aDEuMTcxVjQ1Ljg3NWgtMS4xNzFabS02Ni4yNzYsMFY0Ni41NzFoMS42MTh2LS43SDg2Ljd2LjdoMS42MTZ2NC44NTlabTU0LjU3NC00Ljg4NXYtLjY3SDE0MC42djUuNTU2aDMuNDgxdi0uN0gxNDEuNzdWNDguODU0aDIuMTE1di0uNjU5SDE0MS43N1Y0Ni41NDVabS0xMC4zNzUtLjY3aC0xLjE2OXY1LjU1NkgxMzMuN1ptMi4yNTIsMGgtMS4xODhsMS45MTIsNS41NTZoLjk5M2wxLjkxNS01LjU1NmgtMS4xNzlsLTEuMjI2LDMuNzdabTguMzc0LTExLjUyN0gxMjcuMnYxLjkxNmgxMy4zNzh2NS42NjFoMy43NDhaTTU3LjU3OCwzMS43MTVhNS41OTQsNS41OTQsMCwwLDEtMy40NTIsMi42bDEuNzIsMS4zMTFhNi4wMSw2LjAxLDAsMCwwLDMuMTM0LTEuNDkxLDQuODg5LDQuODg5LDAsMCwwLDEuODA2LTIuNiw1LjA3OCw1LjA3OCwwLDAsMCwxLjgxNiwyLjZBNS45NTYsNS45NTYsMCwwLDAsNjUuNywzNS42MjZsMS42NjktMS4yNjZ2Ny42aDMuNTIxVjIxLjA4NUg2Ny4zNjR2NS43MDhINjQuMjg2djEuOTQyaDMuMDc4djUuMzU0YTUuMzcxLDUuMzcxLDAsMCwxLTMuMzg5LTIuMzk1LDkuMDQ4LDkuMDQ4LDAsMCwxLTEuMzU5LTUuMDIxVjIzLjY4MWgzLjAyOFYyMS43NjdINTUuMzU2djEuOTE0SDU4LjkzdjIuOTkxYTkuMDg5LDkuMDg5LDAsMCwxLTEuMzUyLDUuMDQzbTE4LjY3NCwxNC4xNnY1LjU1NmgxLjExNHYtMy44OWwyLjMwNiwzLjg5aDEuMVY0NS44NzVINzkuNjZ2My44NTdsLTIuMzE4LTMuODU3Wk01NS40MzEsNTEuNTA5YTIuMTMyLDIuMTMyLDAsMCwwLDEuMzczLS4zNzFBMS40MDYsMS40MDYsMCwwLDAsNTcuMjUsNTB2LTQuMTJINTYuMDc2djQuMTQxYS43NzQuNzc0LDAsMCwxLS4yMDguNTkzLjk1NC45NTQsMCwwLDEtLjY1MS4xODksMS44LDEuOCwwLDAsMS0uNS0uMDc1LDIuNjcsMi42NywwLDAsMS0uNTM0LS4yMzF2Ljc2OGEyLjk1MywyLjk1MywwLDAsMCwuNi4xODYsMy4yNDIsMy4yNDIsMCwwLDAsLjY0MS4wNjJNNzUuODc5LDIxLjA4NUg3Mi4zNThWNDEuOTY0aDMuNTIxWk02Mi4zNiw0Ni41NDV2LS42N0g1OC44ODJ2NS41NTZINjIuMzZ2LS43SDYwLjA1MVY0OC44NTRoMi4xMTN2LS42NTlINjAuMDUxVjQ2LjU0NVpNODQuOTc0LDI3LjY4YTEwLjEyMywxMC4xMjMsMCwwLDEtNS41MzUsMS43NDdMODAuOTA4LDMwLjlhMTQuNDkzLDE0LjQ5MywwLDAsMCw1LjI2Mi0xLjA2Miw2LjIsNi4yLDAsMCwwLDMuMzQxLTIuNTcyLDYuNDg1LDYuNDg1LDAsMCwwLDMuMzcsMi41NjFBMTQuMjc2LDE0LjI3NiwwLDAsMCw5OC4xMTQsMzAuOWwxLjQ3LTEuNDY5YTEwLjE2MSwxMC4xNjEsMCwwLDEtNS41MjMtMS43NDdROTEuNCwyNS45NTMsOTEuNCwyMy42NTl2LS4xMjhoNi43OTNWMjEuNTg5SDgwLjgzMXYxLjk0Mmg2Ljc5NHYuMTI4cTAsMi4yOS0yLjY1MSw0LjAyMW0xNC4yLDIzLjE1NmEzLjI5MSwzLjI5MSwwLDAsMCwuNTc4LTIuMTg1LDMuMzIyLDMuMzIyLDAsMCwwLS41NzgtMi4yLDMuMDQ1LDMuMDQ1LDAsMCwwLTMuNzg4LjAwNSwzLjMyMSwzLjMyMSwwLDAsMC0uNTgyLDIuMTkxLDMuMjksMy4yOSwwLDAsMCwuNTgyLDIuMTg1LDMuMDQ2LDMuMDQ2LDAsMCwwLDMuNzg4LDBNOTYuMjg5LDUwLjNhMy4zNjgsMy4zNjgsMCwwLDEtLjMtMS42NjIsMy4zNzQsMy4zNzQsMCwwLDEsLjMtMS42NjYsMS4yODEsMS4yODEsMCwwLDEsMS45OSwwLDMuNDE3LDMuNDE3LDAsMCwxLC4yOTEsMS42NjgsMy40NCwzLjQ0LDAsMCwxLS4yODYsMS42ODcsMS4wNjIsMS4wNjIsMCwwLDEtLjk4My40NiwxLjEsMS4xLDAsMCwxLTEuMDA2LS40ODVtOC4zMTksMS4xMzJoMS4xVjQ1Ljg3NUgxMDQuNnYzLjg1N2wtMi4zMTgtMy44NTdoLTEuMDg1djUuNTU2SDEwMi4zdi0zLjg5Wm0tMjIuODMzLDBoMS4xOWwuNC0xLjA5aDEuOTg3bC40MiwxLjA5aDEuMTg5bC0yLjA0My01LjU1Nkg4My44MTdabTMuMzgtMS43MTJoLTEuNTdsLjc4Ny0yLjQwOFptNywxLjcxMmgxLjE3M1Y0NS44NzVIOTIuMTZabS00LjUwOS05LjQ2N0g5MS40VjM0LjcyNmg4Ljg0OVYzMi44MUg3OC43NzV2MS45MTZoOC44NzZaTTY1LjQ4Nyw1MS4xMzhBMS40LDEuNCwwLDAsMCw2NS45MzQsNTB2LTQuMTJINjQuNzYzdjQuMTQxYS43Ny43NywwLDAsMS0uMjA5LjU5My45NDYuOTQ2LDAsMCwxLS42NS4xODksMS44MTIsMS44MTIsMCwwLDEtLjUtLjA3NSwyLjY1OSwyLjY1OSwwLDAsMS0uNTM2LS4yMzF2Ljc2OGEzLjA2OCwzLjA2OCwwLDAsMCwuNjA3LjE4NiwzLjE3OSwzLjE3OSwwLDAsMCwuNjM5LjA2MiwyLjEwNywyLjEwNywwLDAsMCwxLjM2OS0uMzcxJyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTE0LjAxNCwyMC4yNzhDMTIuNzQyLDIzLjI5MSw4LjcsMjguMzMsOC43LDI4LjMzYy0yLjEsMi43NTEtNC41ODYsNi4yLTUuNDYyLDEwLjc2NUMxLjM4NSw1MS43MjIsOS4yNjUsNTguMjI4LDE0LjEsNjAuMDU5QTE3LjEsMTcuMSwwLDAsMSw1LjIwNiw0MS44NjdjLjc4NC0zLjg3MiwyLjg2NC03Ljg1LDcuNTg4LTEyLjkxLDAsMCw1LjU3My01Ljc4Niw2LjMyNi0xMC44MTJBMTcuNjYzLDE3LjY2MywwLDAsMCwxMS4zMzQsMGExOS4yODUsMTkuMjg1LDAsMCwxLDIuNjgxLDIwLjI3OCcgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yMC44NjUsMjIuMTkyYy0xLjY1LDMuOTMxLTUuOTcxLDcuODcxLTUuOTcxLDcuODcxLTYuODIyLDYuNTUzLTcuNywxMC40NC03LjcsMTAuNDRBMTYuNTEsMTYuNTEsMCwwLDAsOC44Niw1NC4zMmExNC42MzQsMTQuNjM0LDAsMCwwLDguOTU5LDYuNDU3LDExLjc3NiwxMS43NzYsMCwwLDEtNy45Ny0xMC4zNDVjLS4yODktMy45LDEuOTA4LTguODQ4LDguMjYtMTMuODIzYTM1LjExNSwzNS4xMTUsMCwwLDAsNS42ODgtNS43NCwxOC45ODEsMTguOTgxLDAsMCwwLDMuNTkyLTguNTYsMjAuMzEyLDIwLjMxMiwwLDAsMC0xLjE3Mi05Ljk5MSwyMS43LDIxLjcsMCwwLDAtNS42Ni04LjQ4NGM0LjgzNSw5LjI4OS4zMDksMTguMzU5LjMwOSwxOC4zNTknIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNNDQuNDkxLDQyLjc1MlYyMS4xMDlIMzUuODc2VjQ1LjI0M2MtLjAyNiwxLjY3NS0uMTczLDMuNTQ3LS4xNzMsMy41NDdhMTEuNCwxMS40LDAsMCwxLS44OTIsMy45MjEsMTMuNDE4LDEzLjQxOCwwLDAsMS01LjA3OCw2LjE1NWMtOC45ODksNi4wMzgtMTcuOTc4LDEuMDQzLTE3Ljk3OCwxLjA0MywxMS4yMzYsNi42MzUsMjIuMTcyLjUyMiwyMi4xNzIuNTIyLDcuNy00LjQ0LDkuNzk1LTEwLjQ4MSwxMC4zNjItMTMuNzMxYTMwLjU0OSwzMC41NDksMCwwLDAsLjItMy45NDgnIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTAuMDA3LDU4LjUzOUExOS40MzEsMTkuNDMxLDAsMCwxLDIuNzcsNDguNjIxYTIyLjkyLDIyLjkyLDAsMCwxLS43MzMtMTAuNDUsMjcuMDI5LDI3LjAyOSwwLDAsMSwyLjYtNy40LDQxLjMyMSw0MS4zMjEsMCwwLDEsMy00LjUxN0E0MS4xMzIsNDEuMTMyLDAsMCwwLDEwLjE3NSwyMi4zLDEyLjc3LDEyLjc3LDAsMCwwLDkuMTQxLDguMDU3czIuMjQzLDUuNzc2LS42ODYsMTEuMTU1YzAsMC0xLjM3NywyLjM1LTIuODczLDQuNTc4LDAsMC0zLjI4OCw0LjczOC00LjI1LDcuOTUzQTIzLjQ4NywyMy40ODcsMCwwLDAsLjU4OSw0NC44N3MxLjU1Niw5LjM1Niw5LjQxOCwxMy42NjknIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTguOTcyLDU4LjA4OVY1NS40aC0uNTMxdi0uMzY5aDEuMDcxdjMuMDZaJyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIxLjc1Myw1NS45NjVhLjguOCwwLDAsMC0uMTA4LS40NjYuMzk0LjM5NCwwLDAsMC0uMzQxLS4xNDguMzY3LjM2NywwLDAsMC0uMzIyLjE0Ni44NzEuODcxLDAsMCwwLS4xLjQ3My44NS44NSwwLDAsMCwuMS40NzUuMzg4LjM4OCwwLDAsMCwuMzM1LjEzNC4zODIuMzgyLDAsMCwwLC4zMzUtLjE0Ni44MjguODI4LDAsMCwwLC4xLS40NjhtLS4xLjhhLjc1Ni43NTYsMCwwLDEtLjIzLjExNi44MDkuODA5LDAsMCwxLS4yNTkuMDM4Ljc5Ljc5LDAsMCwxLS42MTktLjIxNiwxLjQsMS40LDAsMCwxLC4wNDQtMS40NzguOTgxLjk4MSwwLDAsMSwuNzMzLS4yNDUuOTM3LjkzNywwLDAsMSwuNzE5LjI1OSwxLjEzMiwxLjEzMiwwLDAsMSwuMjM2Ljc4MiwyLjEsMi4xLDAsMCwxLS4yLjg1OCw3LjAwNyw3LjAwNywwLDAsMS0uNzczLDEuMjA3aC0uNjI4cS40MTItLjUxMi42MTktLjhjLjEzOC0uMTg5LjI1Ni0uMzYyLjM1NS0uNTIzJyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIyLjc3MSw1Ny42MmExLjMsMS4zLDAsMCwwLC4yNzguMTA1LDEuMiwxLjIsMCwwLDAsLjI5Mi4wMzYuNzg1Ljc4NSwwLDAsMCwuNTc1LS4xODkuNzM4LjczOCwwLDAsMCwuMTkzLS41NTguNDg3LjQ4NywwLDAsMC0uMi0uNDIyLDEuMDE3LDEuMDE3LDAsMCwwLS41ODYtLjEzOWMtLjEwNiwwLS4xOTQsMC0uMjY5LjAwOWEyLjE3NiwyLjE3NiwwLDAsMC0uMjIzLjAzMmwuMjg0LTEuNDY0aDEuNVY1NS40SDIzLjU3MmwtLjE2OC43NDYuMTUzLS4wMTdjLjA0NiwwLC4wODcsMCwuMTIyLDBhMS4wMSwxLjAxLDAsMCwxLC43MDguMjQ1Ljg0Ni44NDYsMCwwLDEsLjI2OC42NTMsMS4wMjUsMS4wMjUsMCwwLDEtLjMyNy44MTEsMS4zMTcsMS4zMTcsMCwwLDEtLjkxLjI5MSwyLjI2LDIuMjYsMCwwLDEtLjQwOC0uMDM2LDIuMDY5LDIuMDY5LDAsMCwxLS4zODYtLjEwOVonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMjUuMTE0LDU4LjA5bDEuMTQ3LTEuNjIyYTIuNDI3LDIuNDI3LDAsMCwwLC4yMjctLjQuODMuODMsMCwwLDAsLjA3NC0uMzI1LjQyNS40MjUsMCwwLDAtLjA5NC0uMy40MDYuNDA2LDAsMCwwLS4zLS4xLjM3NC4zNzQsMCwwLDAtLjMyLjEzLjc4MS43ODEsMCwwLDAtLjA5NC40NDJ2LjEwNmgtLjUzOWEuMjM2LjIzNiwwLDAsMS0uMDA2LS4wNTl2LS4xYS44My44MywwLDAsMSwuMjQ4LS42NTgsMS4wODQsMS4wODQsMCwwLDEsLjc0Mi0uMjIxLDEuMTE1LDEuMTE1LDAsMCwxLC43LjIuNjcxLjY3MSwwLDAsMSwuMjU1LjU1NSwxLjAzOSwxLjAzOSwwLDAsMS0uMS40MjgsMi42ODMsMi42ODMsMCwwLDEtLjMzNS41MjZsLS43NzcsMWgxLjEyM3YuMzg4WicgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yNi40NjEsNDguMDZ2My42ODNhMS4xOTQsMS4xOTQsMCwwLDAsLjUsMS4wNjksMi45LDIuOSwwLDAsMCwxLjU3Ni4zMzUsMi45MzMsMi45MzMsMCwwLDAsMS41OC0uMzM1LDEuMiwxLjIsMCwwLDAsLjUtMS4wNjlWNDguMDZIMjkuNTYyVjUxLjhhLjYuNiwwLDAsMS0uMjQ5LjUzNCwxLjg0OSwxLjg0OSwwLDAsMS0xLjU0OSwwLC41OTQuNTk0LDAsMCwxLS4yNTUtLjUzNFY0OC4wNlonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTUuNzA4LDUzLjE1OGExLjkyNCwxLjkyNCwwLDAsMCwxLjI0MS0uMzM0LDEuMjcsMS4yNywwLDAsMCwuNC0xLjAzNVY0OC4wNkgxNi4yOXYzLjc0OGEuNy43LDAsMCwxLS4xODcuNTM3Ljg1NC44NTQsMCwwLDEtLjU4OC4xNzIsMS42MzQsMS42MzQsMCwwLDEtLjQ0OS0uMDY5LDIuNDMsMi40MywwLDAsMS0uNDgzLS4yMDl2LjdhMi42NSwyLjY1LDAsMCwwLC41NDkuMTY4LDIuOTc3LDIuOTc3LDAsMCwwLC41NzcuMDU1JyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIxLjcwOSw0OC42Njl2LS42MDlIMTguNTU4djUuMDI5aDMuMTUxdi0uNjMxSDE5LjYxOXYtMS43aDEuOTEzdi0uNkgxOS42MTlWNDguNjY5WicgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yNC44NjMsNTIuODI0YTEuMjY3LDEuMjY3LDAsMCwwLC40LTEuMDM0VjQ4LjA2SDI0LjIwN3YzLjc0OWEuNy43LDAsMCwxLS4xODkuNTM2Ljg1NS44NTUsMCwwLDEtLjU4OS4xNzIsMS42NjksMS42NjksMCwwLDEtLjQ0OS0uMDY5LDIuMjY2LDIuMjY2LDAsMCwxLS40ODUtLjIwOXYuN2EyLjc0OSwyLjc0OSwwLDAsMCwuNTUuMTY4LDIuODc0LDIuODc0LDAsMCwwLC41OC4wNTUsMS45MDksMS45MDksMCwwLDAsMS4yMzgtLjMzNCcgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yMy4xOTMsNDYuNDQyYTEuOTg0LDEuOTg0LDAsMCwwLC45MTgtLjMwNWw1LjM0NS4zN1YzOS42NDJMMjguOSwzOS42MWwuMjQ3LjM4OHY2LjIxOWwtNS4xNC0uMzI5YTEuNTA3LDEuNTA3LDAsMCwxLTEuNzkxLDBsLTUuMTM4LjMyOVY0MGwuMjQ1LS4zODgtLjU1OC4wMzJ2Ni44NjVsNS4zNDYtLjM3YTEuOTcsMS45NywwLDAsMCwuOTE2LjMwNSwxLjQ3MSwxLjQ3MSwwLDAsMCwuMTY3LDAnIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTcuOSwzOS4yMTljLS4xMTkuMTg2LS41MjguODI4LS41NDEuODQ1djUuNTc3Yy4xMi0uMi41My0uODc5LjU0MS0uOVonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMjIuMjc1LDQ1LjZsLjAxNS4wMTRhMS4xOTEsMS4xOTEsMCwwLDAsLjYwOC4yODIsMS4xNzEsMS4xNzEsMCwwLDAtLjYtLjg4LDMuNzIyLDMuNzIyLDAsMCwwLTEuNjkxLS4yOTFjLS4zNTQsMC0uNzMyLjAyMS0xLjE2Mi4wNjNzLS44NTQuMS0xLjMuMTgzYy0uMDE5LjAzLS40OTUuODE5LS41NjcuOTM4LjE1OS0uMDA5LDQuNy0uMzA5LDQuNy0uMzA5JyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTI4Ljg2MSw0MC4wNjVsLS41NC0uODQ1djUuNTI2Yy4wMTEuMDE3LjQyLjcuNTQuOVonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMjMuOTIsNDUuMDExYTEuMTgsMS4xOCwwLDAsMC0uNi44OCwxLjE4NywxLjE4NywwLDAsMCwuNjEtLjI4MmwuMDE0LS4wMTRzNC41NC4zLDQuNy4zMDljLS4wNzItLjExOS0uNTQ3LS45MDgtLjU2NS0uOTM4LS40NDgtLjA4LS44ODctLjE0Mi0xLjMtLjE4NHMtLjgwOC0uMDYyLTEuMTYxLS4wNjJhMy43MywzLjczLDAsMCwwLTEuNjkyLjI5MScgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yNi43NjYsMzguNjMxYTEwLjk4MiwxMC45ODIsMCwwLDAtMS4yLS4wNjhsLS41MzYuMDIzLS40MDguMDYxYTIuMTQ0LDIuMTQ0LDAsMCwwLS43NDQuMjg3bC0uMDU4LjA0NEwyMy44LDM5YTEuODI2LDEuODI2LDAsMCwwLS41MjEuNTQ3djUuNmExLjMsMS4zLDAsMCwxLC4yODMtLjI3NiwzLjMyMSwzLjMyMSwwLDAsMSwxLjM1Mi0uNDIxbC4wMjQsMCwuMDI2LDBhNy45LDcuOSwwLDAsMSwxLS4wMzNsLjc0MS4wNTFjLjM3NS4wMzYuODEuMDkyLDEuMy4xNjRWMzguODI4Yy0uNDIxLS4wODctLjgzNi0uMTU0LTEuMjMtLjJtLjU0LDEuMjRhMi42NzUsMi42NzUsMCwwLDEtMS41NjcsMS41MDdzLjIwNS4wNDkuNjgyLjYxMmExLjk2NSwxLjk2NSwwLDAsMCwuNjIyLjUxNHMtLjY3MywxLjMyMS0uNzQsMS40NzdhMi45NDQsMi45NDQsMCwwLDEtLjgzLTEuMzA1LjIzNy4yMzcsMCwwLDAtLjIzNC0uMTIycy0uNTM1LjA1OS0uNzUzLjA3N2EuMi4yLDAsMCwxLS4yMTYsMGwtLjA3OS0uMDgzcy0uMDE5LjAwNS0uMDUyLS4wMjRhLjE3OS4xNzksMCwwLDEtLjA3My0uMTI4LjE0Mi4xNDIsMCwwLDEsLjA0NC0uMTEzLDcuOTIzLDcuOTIzLDAsMCwwLDEuMDU3LS44MzJzLS4wMDkuMDMxLjA0LS4wOTNhMS43MjgsMS43MjgsMCwwLDEtLjQyNy0uMTc3cy0uMTg4LS4xMjgtLjE4My0uMjk0bC4wNDQsMHMwLC4yLjM4Ny4zMThhLjg1NS44NTUsMCwwLDEtLjEyNy0uMjgyLjE4OC4xODgsMCwwLDEsLjA1NC0uMDEycy4xMS4zMjYuMy4zMzRjMCwwLC4zNjUtLjIyNC4zOTMtLjQ3NiwwLDAtLjE1Mi0uMDkzLS4yMTMtLjQ3M2wuMDUtLjAyOHMuMDYuMzU5LjI0LjM0OWMwLDAsLjE2MywwLC4yNjMtLjNhMS40NzIsMS40NzIsMCwwLDAsLjA3OS0uNSwxLjc2NSwxLjc2NSwwLDAsMC0uMDM3LS4yNDRsLjAzNy0uMDZhMS4wODMsMS4wODMsMCwwLDEsLjA0OS4xODQuNzY1Ljc2NSwwLDAsMSwuMTQzLS4zNjdsLjAzMy4wMThhLjY1Ny42NTcsMCwwLDAtLjA4Ny40LDEuODI3LDEuODI3LDAsMCwxLS4xMi42NDgsMi43LDIuNywwLDAsMS0uNjA1LjksNS40MTcsNS40MTcsMCwwLDAsLjc0MS0uMzZzLjIyMS0uMTM3LjI0Ny0uNjA3aC4wNThhMSwxLDAsMCwxLS4wMDcuMzgzLDEuNjExLDEuNjExLDAsMCwwLC42NzYtLjgyMi41MDguNTA4LDAsMCwwLS4wMTUtLjMzNGwuMDI0LS4wMzJhLjYuNiwwLDAsMSwuMDgyLjIzMi40MjMuNDIzLDAsMCwxLC4yNTItLjIzbC4wMTMuMDM1YS42MjEuNjIxLDAsMCwwLS4yNDMuMzE1JyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIyLjQyMSwzOWwtLjAyMi0uMDE3LS4wNTktLjA0M2EyLjEyMSwyLjEyMSwwLDAsMC0uNzQyLS4yODhsLS40MTEtLjA2MS0uNTMzLS4wMjNhMTAuNywxMC43LDAsMCwwLTEuMi4wNjhjLS40LjA0My0uODExLjEwOS0xLjIzMS4ydjUuNzk1Yy40ODYtLjA3My45MjEtLjEyOSwxLjI5NS0uMTY0bC43NDMtLjA1MmE3Ljk4MSw3Ljk4MSwwLDAsMSwuOTkzLjAzNGwuMDMsMCwuMDI4LDBhMy4yODUsMy4yODUsMCwwLDEsMS4zNDcuNDI0LDEuMjUxLDEuMjUxLDAsMCwxLC4yODQuMjczdi01LjZBMS44MzEsMS44MzEsMCwwLDAsMjIuNDIxLDM5bS0uNzQ1LDQuNjc0SDE5LjZhNC42NzMsNC42NzMsMCwwLDAtLjMyMy0yLjQ4NGMuNDM2LS40ODguOTktMS4yMDksMS4yMzQtMS41MzN2MS45NGEuMzI4LjMyOCwwLDEsMCwuMjQzLDBWMzkuNjM3Yy4yMzYuMzE0LjgsMS4wNTIsMS4yNDYsMS41NDlhNC42NjgsNC42NjgsMCwwLDAtLjMyMSwyLjQ4NCcgZmlsbD0nI2ZmZmZmZicvPjwvc3ZnPg==" alt="제주대학교">
+      <p class="kicker">제주대학교 첨단인재양성 부트캠프</p>
+      <h1>제주에서 AI 실무를 배우고<br>다음 일을 시작하세요</h1>
+      <p class="lead">전공이나 경력이 없어도 괜찮습니다. 업무에 바로 쓰는 AI 활용법부터 나만의 결과물을 만드는 프로젝트까지, 제주대학교에서 함께 준비합니다.</p>
+      <div class="hero-cta">
+        <a class="btn btn-apply js-apply" href="#" target="_blank" rel="noopener">
+          교육 신청하기
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
+        <a class="btn btn-line" href="#recruit">모집 안내 보기</a>
+      </div>
+      <p class="hero-note">신청서는 구글 폼으로 작성하며, 새 창에서 열립니다.</p>
+    </div>
+    <!-- 오름(초록)·파도(하늘)·바다(남색): 제주대학교 문장의 상징을 풍경으로 -->
+    <svg class="landscape" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 150 C120 150 170 70 300 70 C420 70 460 140 560 140 C640 140 690 96 780 96 C880 96 930 150 1040 150 C1150 150 1200 60 1320 60 C1380 60 1420 90 1440 100 V220 H0Z" fill="#64A91C" opacity=".92"/>
+      <g class="land-wave">
+        <path d="M-80 170 Q20 140 120 170 T320 170 T520 170 T720 170 T920 170 T1120 170 T1320 170 T1520 170 T1720 170 V220 H-80Z" fill="#0099E7"/>
+      </g>
+      <path d="M0 196 Q180 184 360 196 T720 196 T1080 196 T1440 196 V220 H0Z" fill="#FFFFFF"/>
+    </svg>
+  </section>
+
+  <!-- 핵심 정보 -->
+  <div class="wrap facts">
+    <dl>
+      <div><dt>모집 대상</dt><dd data-cfg="target"></dd></div>
+      <div><dt>모집 기간</dt><dd data-cfg="applyPeriod"></dd></div>
+      <div><dt>교육 기간</dt><dd data-cfg="eduPeriod"></dd></div>
+      <div><dt>교육 장소</dt><dd data-cfg="place"></dd></div>
+    </dl>
+  </div>
+
+  <!-- 사업 소개 -->
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>일을 다시 시작하려는 성인을 위한 대학의 실무 교육</h2>
+        <p>제주대학교 AI융합원이 운영하는 첨단인재양성 부트캠프는 지역 청년과 성인 미취업자가 AI를 도구로 삼아 새로운 일자리에 도전하도록 돕습니다.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>AI는 개발자만의 도구가 아닙니다. 문서 작성, 자료 조사, 데이터 정리, 홍보물 제작처럼 대부분의 사무·서비스 업무에서 이미 쓰이고 있습니다. 부트캠프는 <strong>지금 바로 쓸 수 있는 AI 활용 능력</strong>과 <strong>면접에서 보여줄 수 있는 결과물</strong>을 함께 갖추는 데 집중합니다.</p>
+          <p>강의를 듣는 데서 끝나지 않고, 제주 지역의 실제 과제를 다루는 프로젝트와 취업 연계 프로그램까지 이어집니다.</p>
+          <p style="margin-top:32px;font-weight:700;color:var(--t1)">이런 분께 권합니다</p>
+          <ul class="who" style="margin-top:12px">
+            <li><span>취업이나 이직을 준비하며 새로운 기술을 익히고 싶은 분</span></li>
+            <li><span>AI를 써 보고 싶었지만 어디서부터 시작할지 막막했던 분</span></li>
+            <li><span>제주에서 일하며 지역에 필요한 인재로 성장하고 싶은 분</span></li>
+          </ul>
+        </div>
+        <figure class="org">
+          <div class="scroll"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="orgT orgD">
+  <title id="orgT">제주대학교 AI융합원 조직도</title>
+  <desc id="orgD">총장 아래 AI융합원장, 운영위원회, 부원장을 두고 AI교육센터, AI연구센터, 산학협력센터, 행정지원팀으로 구성된 조직도</desc>
+  <style>
+    text { font-family: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; }
+    .line { stroke: #9FB3D6; stroke-width: 2; fill: none; }
+    .navy { fill: #003288; }
+    .sky { fill: #0099E7; }
+    .green { fill: #64A91C; }
+    .panel { fill: #F3F7FC; stroke: #D6E2F2; stroke-width: 1; }
+    .w { fill: #FFFFFF; }
+    .h1 { font-size: 22px; font-weight: 700; }
+    .h2 { font-size: 18px; font-weight: 700; }
+    .h3 { font-size: 17px; font-weight: 600; }
+    .sub { font-size: 12px; font-weight: 400; }
+    .item { font-size: 15px; fill: #2B3A55; }
+    .dot { fill: #0099E7; }
+  </style>
+
+  
+  <path class="line" d="M600 96 V140 M600 212 V256 M600 308 V350 M350 176 H470" />
+  <path class="line" d="M180 350 H1020 M180 350 V380 M460 350 V380 M740 350 V380 M1020 350 V380" />
+
+  
+  <rect x="500" y="40" width="200" height="56" rx="8" fill="#FFFFFF" stroke="#003288" stroke-width="2" />
+  <text x="600" y="75" text-anchor="middle" class="h3" fill="#003288">제주대학교 총장</text>
+
+  
+  <rect x="470" y="140" width="260" height="72" rx="10" class="navy" />
+  <text x="600" y="172" text-anchor="middle" class="h1 w">AI융합원장</text>
+  <text x="600" y="196" text-anchor="middle" class="sub" fill="#C9D6EE">AI Convergence Institute</text>
+
+  
+  <rect x="150" y="152" width="200" height="48" rx="8" fill="#FFFFFF" stroke="#003288" stroke-width="1.5" stroke-dasharray="6 4" />
+  <text x="250" y="182" text-anchor="middle" class="h3" fill="#003288">운영위원회</text>
+
+  
+  <rect x="500" y="256" width="200" height="52" rx="8" class="sky" />
+  <text x="600" y="288" text-anchor="middle" class="h2 w">부원장</text>
+
+  
+  <rect x="70" y="380" width="220" height="60" rx="8" class="navy" />
+  <text x="180" y="417" text-anchor="middle" class="h2 w">AI교육센터</text>
+  <rect x="70" y="456" width="220" height="190" rx="8" class="panel" />
+  <rect x="86" y="474" width="188" height="40" rx="20" class="green" />
+  <text x="180" y="499" text-anchor="middle" class="h3 w">청년도약 부트캠프</text>
+  <circle cx="96" cy="545" r="3" class="dot" /><text x="108" y="550" class="item">AI 리터러시 교육</text>
+  <circle cx="96" cy="580" r="3" class="dot" /><text x="108" y="585" class="item">비교과 AI 프로그램</text>
+  <circle cx="96" cy="615" r="3" class="dot" /><text x="108" y="620" class="item">교육과정 개발</text>
+
+  
+  <rect x="350" y="380" width="220" height="60" rx="8" class="navy" />
+  <text x="460" y="417" text-anchor="middle" class="h2 w">AI연구센터</text>
+  <rect x="350" y="456" width="220" height="190" rx="8" class="panel" />
+  <circle cx="376" cy="495" r="3" class="dot" /><text x="388" y="500" class="item">AI 융합 연구</text>
+  <circle cx="376" cy="530" r="3" class="dot" /><text x="388" y="535" class="item">지역 데이터 활용</text>
+  <circle cx="376" cy="565" r="3" class="dot" /><text x="388" y="570" class="item">연구과제 지원</text>
+
+  
+  <rect x="630" y="380" width="220" height="60" rx="8" class="navy" />
+  <text x="740" y="417" text-anchor="middle" class="h2 w">산학협력센터</text>
+  <rect x="630" y="456" width="220" height="190" rx="8" class="panel" />
+  <circle cx="656" cy="495" r="3" class="dot" /><text x="668" y="500" class="item">기업·기관 협력</text>
+  <circle cx="656" cy="530" r="3" class="dot" /><text x="668" y="535" class="item">해커톤·경진대회</text>
+  <circle cx="656" cy="565" r="3" class="dot" /><text x="668" y="570" class="item">취업·창업 연계</text>
+
+  
+  <rect x="910" y="380" width="220" height="60" rx="8" class="navy" />
+  <text x="1020" y="417" text-anchor="middle" class="h2 w">행정지원팀</text>
+  <rect x="910" y="456" width="220" height="190" rx="8" class="panel" />
+  <circle cx="936" cy="495" r="3" class="dot" /><text x="948" y="500" class="item">사업 기획·예산</text>
+  <circle cx="936" cy="530" r="3" class="dot" /><text x="948" y="535" class="item">대외 협력·홍보</text>
+  <circle cx="936" cy="565" r="3" class="dot" /><text x="948" y="570" class="item">시설·장비 운영</text>
+</svg></div>
+          <figcaption>운영 체계: 제주대학교 AI융합원 AI교육센터에서 부트캠프를 운영합니다.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 교육과정 -->
+  <section class="sec alt" id="curriculum">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>기초부터 프로젝트까지, 세 단계로 배웁니다</h2>
+        <p>처음 AI를 접하는 분도 따라올 수 있도록 단계를 나눴습니다. 앞 단계를 마치면 다음 단계로 이어집니다.</p>
+      </div>
+      <div class="course" id="courseList"></div>
+      <div class="tools" id="toolList"><span class="lbl">다루는 도구</span></div>
+      <p class="note" data-cfg="courseNote"></p>
+    </div>
+  </section>
+
+  <!-- 지원 혜택 -->
+  <section class="sec" id="benefit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>수료 후에도 다음 걸음을 함께 준비합니다</h2>
+        <p>교육만 제공하지 않습니다. 취업과 창업으로 이어지도록 필요한 지원을 연결합니다.</p>
+      </div>
+      <ul class="benefit">
+        <li>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+          <div><h3>취업 연계</h3><p>협력 기업·기관과의 채용 연계, 이력서와 포트폴리오 첨삭, 모의 면접을 지원합니다.</p></div>
+        </li>
+        <li>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="m8.5 13 -1.5 8 5-3 5 3-1.5-8"/></svg></div>
+          <div><h3>수료증 발급</h3><p>수료 기준을 충족하면 제주대학교 명의의 수료증을 발급합니다.</p></div>
+        </li>
+        <li>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
+          <div><h3>학습 공간 제공</h3><p>제주대학교 아라캠퍼스의 교육 공간과 실습 장비에서 집중해서 배울 수 있습니다.</p></div>
+        </li>
+        <li>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20c.5-3.5 2.8-5.5 5.5-5.5s5 2 5.5 5.5M14 15.2c.9-.5 1.9-.7 3-.7 2.3 0 4 1.7 4.5 5"/></svg></div>
+          <div><h3>동료와 네트워크</h3><p>같은 목표를 가진 동기, 현업 멘토와 함께 배우며 수료 후에도 이어지는 관계를 만듭니다.</p></div>
+        </li>
+      </ul>
+      <p class="note" data-cfg="benefitNote"></p>
+    </div>
+  </section>
+
+  <!-- 참여 과정 -->
+  <section class="sec alt" id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>신청부터 수료까지 이렇게 진행됩니다</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>온라인 신청</h3><p>구글 폼으로 신청서를 제출합니다.</p></li>
+        <li><h3>서류 확인·선발</h3><p>지원 자격을 확인하고 결과를 개별 안내합니다.</p></li>
+        <li><h3>오리엔테이션</h3><p>교육 일정과 수료 기준을 안내받습니다.</p></li>
+        <li><h3>교육·프로젝트</h3><p>단계별 교육과 팀 프로젝트를 진행합니다.</p></li>
+        <li><h3>수료·취업 연계</h3><p>수료증을 받고 취업 연계 프로그램에 참여합니다.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 모집 안내 -->
+  <section class="sec recruit" id="recruit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>지금 교육생을 모집합니다</h2>
+        <p>신청서 작성에는 5분 정도 걸립니다. 선발 결과는 입력하신 연락처로 안내합니다.</p>
+      </div>
+      <div class="recruit-grid">
+        <table class="rtable">
+          <caption class="skip">모집 요강</caption>
+          <tbody>
+            <tr><th scope="row">모집 대상</th><td data-cfg="target"></td></tr>
+            <tr><th scope="row">모집 인원</th><td data-cfg="capacity"></td></tr>
+            <tr><th scope="row">모집 기간</th><td data-cfg="applyPeriod"></td></tr>
+            <tr><th scope="row">교육 기간</th><td data-cfg="eduPeriod"></td></tr>
+            <tr><th scope="row">교육 장소</th><td data-cfg="placeFull"></td></tr>
+            <tr><th scope="row">교육비</th><td data-cfg="fee"></td></tr>
+            <tr><th scope="row">신청 방법</th><td>아래 신청 버튼을 눌러 구글 폼 작성</td></tr>
+          </tbody>
+        </table>
+        <div class="apply-box">
+          <h3>교육 신청서 작성</h3>
+          <p>제출 후 수정이 필요하면 문의처로 연락해 주세요.</p>
+          <p class="dday" id="dday"></p>
+          <a class="btn btn-apply js-apply" href="#" target="_blank" rel="noopener">
+            교육 신청하기
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+          <small>구글 폼이 새 창에서 열립니다. 문의 <span data-cfg="phone"></span></small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 공유 -->
+  <section class="share" aria-labelledby="shareTitle">
+    <div class="wrap share-in">
+      <div>
+        <h2 id="shareTitle">필요한 분께 이 페이지를 알려주세요</h2>
+        <p>일을 다시 시작하려는 가족, 친구, 동료에게 링크 하나로 전할 수 있습니다.</p>
+      </div>
+      <div class="share-btns">
+        <button class="btn btn-navy js-share" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>
+          공유하기
+        </button>
+        <button class="btn btn-ghost js-copy" type="button">링크 복사</button>
+        <a class="btn btn-ghost" id="shBand" href="#" target="_blank" rel="noopener">밴드</a>
+        <a class="btn btn-ghost" id="shFb" href="#" target="_blank" rel="noopener">페이스북</a>
+        <a class="btn btn-ghost" id="shX" href="#" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>자주 묻는 질문</h2>
+        <p>여기서 답을 찾지 못했다면 문의처로 연락해 주세요.</p>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- 오시는 길 -->
+  <section class="sec alt" id="location">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>오시는 길과 문의</h2>
+      </div>
+      <div class="loc-grid">
+        <div class="loc">
+          <dl>
+            <div><dt>주소</dt><dd data-cfg="address"></dd></div>
+            <div><dt>교육 장소</dt><dd data-cfg="placeFull"></dd></div>
+            <div><dt>운영</dt><dd data-cfg="operator"></dd></div>
+            <div><dt>전화</dt><dd data-cfg="phone"></dd></div>
+            <div><dt>이메일</dt><dd data-cfg="email"></dd></div>
+          </dl>
+          <div class="btns">
+            <a class="btn btn-navy" id="naverMap" href="#" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+            <a class="btn btn-ghost" id="kakaoMap" href="#" target="_blank" rel="noopener">카카오맵에서 보기</a>
+          </div>
+        </div>
+        <div class="mapcard" aria-hidden="true">
+          <svg viewBox="0 0 560 300">
+            <rect width="560" height="300" fill="#E8F1FA"/>
+            <path d="M0 230 C120 212 200 250 320 236 C420 224 480 250 560 242 V300 H0Z" fill="#CFE6F7"/>
+            <circle cx="280" cy="120" r="44" fill="#003288" opacity=".1"/>
+            <path d="M280 150 c-20-24-30-38-30-52a30 30 0 0 1 60 0c0 14-10 28-30 52z" fill="#003288"/>
+            <circle cx="280" cy="98" r="10" fill="#fff"/>
+            <text x="280" y="196" text-anchor="middle" font-size="20" font-weight="800" fill="#003288" font-family="Pretendard Variable, sans-serif">제주대학교 아라캠퍼스</text>
+            <text x="280" y="222" text-anchor="middle" font-size="14" fill="#666" font-family="Pretendard Variable, sans-serif">제주시 제주대학로 102</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxNjgnIGhlaWdodD0nNjMnIHZpZXdCb3g9JzAgMCAxNjggNjMnPjxwYXRoIGQ9J00xMjUuNjExLDI4YzAsMi42NTcsMi43NjQsNC44MTQsNi4xNzEsNC44MTRzNi4xNzQtMi4xNTgsNi4xNzQtNC44MTRhNC4zMzksNC4zMzksMCwwLDAtMS44MzQtMy40MjRoMi4zNTFWMjIuNjg3aC00LjhWMjAuNTE2SDEyOS45djIuMTcySDEyNS4xdjEuODg1aDIuMzQyQTQuMzY2LDQuMzY2LDAsMCwwLDEyNS42MTEsMjhtNi4xNzEtMy4wMzhBMi44NTMsMi44NTMsMCwwLDEsMTM0LjQsMjhhMi42NTEsMi42NTEsMCwxLDEtNS4yNDUsMCwyLjg1NSwyLjg1NSwwLDAsMSwyLjYyMy0zLjAzOG0tNS40NTcsMjYuNDczaDEuMTA5di0zLjg5bDIuMzA4LDMuODloMS4xVjQ1Ljg3NWgtMS4xMXYzLjg1N2wtMi4zMTYtMy44NTdoLTEuMDlabS0xOC4wMTYtMS4wOUgxMTAuM2wuNDE3LDEuMDlIMTExLjlsLTIuMDQzLTUuNTU2aC0xLjEwOGwtMi4wNDEsNS41NTZIMTA3LjlabTEtMy4wMy43ODEsMi40MDhoLTEuNTY5Wk0xMDMuNiwzNC42OTJhMi43ODgsMi43ODgsMCwwLDAsMS44ODcuNmg1LjAyOGE2LjIsNi4yLDAsMCwwLDEuNzQ3LS4yMTVjLjQ3Ni0uMTQyLjktLjI4MywxLjUtLjUxOHY3LjRoMy41NDlWMjguN2gxLjY2N3YxMy4yNmgzLjU0OFYyMS4wODVoLTMuNTQ4djUuNjcyaC0xLjY2N1YyMS4wODVIMTEzLjc2djExLjczYTEwLjMzMiwxMC4zMzIsMCwwLDEtMS40NDguNCw4LjM1NSw4LjM1NSwwLDAsMS0xLjY2LjE0MmgtNC4wNlYyMy44MDZoNS4zNFYyMS44NjdoLTkuMDI2VjMzLjA3OGEyLjA0MSwyLjA0MSwwLDAsMCwuNjkyLDEuNjEzbTQwLjczMy02LjU2NWgzLjA0VjI2LjE4NWgtMy4wNFYyMS4wNWgtMy43NDhWMzMuNDI5aDMuNzQ4Wk02Ny41NDEsNDUuODc1djQuMDY4YTEuMzI1LDEuMzI1LDAsMCwwLC41NTMsMS4xODEsNC4yODYsNC4yODYsMCwwLDAsMy40ODksMCwxLjMxNywxLjMxNywwLDAsMCwuNTQ4LTEuMTgxVjQ1Ljg3NWgtMS4xNlY1MGEuNjY2LjY2NiwwLDAsMS0uMjc1LjU5LDIuMDMyLDIuMDMyLDAsMCwxLTEuNzEyLDBBLjY2My42NjMsMCwwLDEsNjguNyw1MFY0NS44NzVabTUyLjU3NSwwdjQuMDY4YTEuMzIsMS4zMiwwLDAsMCwuNTUsMS4xODEsNC4yODEsNC4yODEsMCwwLDAsMy40ODcsMCwxLjMxOSwxLjMxOSwwLDAsMCwuNTUyLTEuMTgxVjQ1Ljg3NWgtMS4xNlY1MGEuNjY5LjY2OSwwLDAsMS0uMjc2LjU5LDEuNTI3LDEuNTI3LDAsMCwxLS44NTMuMTg5LDEuNTU2LDEuNTU2LDAsMCwxLS44Ni0uMTg5LjY2NC42NjQsMCwwLDEtLjI4MS0uNTlWNDUuODc1Wm00NS45NjQsMC0uNzMyLDEuNTUzYTMuOSwzLjksMCwwLDAtLjE3MS40MjRjLS4wNTEuMTQ3LS4wOTIuMy0uMTM4LjQ1OWE1LjE3NCw1LjE3NCwwLDAsMC0uMTUyLS41MDYsMi44NTgsMi44NTgsMCwwLDAtLjE1Mi0uMzgyTDE2NCw0NS44NzVoLTEuMjE4bDEuNjUsMy4xOXYyLjM2NmgxLjIxVjQ5LjA2NWwxLjY1OS0zLjE5Wm0tNTMuMTU3LDB2NS41NTZoMy43di0uN0gxMTQuMVY0NS44NzVaTTE2OCwzOS4xNzNoLTcuNDQ1VjMwLjUxNmgtMy42MDZ2OC42NTdoLTEuODU3VjMwLjUxNmgtMy42MDl2OC42NTdIMTQ3LjcydjEuOTE4SDE2OFptLTUuNDc1LTguOTZjMCwxLjU2My0uMDQ3LDIuODUyLS4xNSwzLjg1N2E1LjY0Myw1LjY0MywwLDAsMS0uODc1LDIuNmgzLjMwN2E3Ljg0OSw3Ljg0OSwwLDAsMCwxLjAzNC0yLjU0NCwxNi4xNTEsMTYuMTUxLDAsMCwwLC4zNzMtMy42NlYyMS45ODVIMTQ5LjY1NHYxLjk0MmgxMi44N1pNMTQ2Ljg3OCw0NS44NzVoLTEuNDA2djUuNTU2aDEuMTdWNDguNzE3aC4wMjhsMi4wMDUsMi43MTRoMS4yNmwtMi4wODEtMi43MzhhMi4xOTEsMi4xOTEsMCwwLDAsMS4yMzYtLjQwOCwxLjE5MSwxLjE5MSwwLDAsMCwuNDEyLS45NjIsMS4xNzcsMS4xNzcsMCwwLDAtLjYtMS4xMTQsNC40Niw0LjQ2LDAsMCwwLTIuMDI0LS4zMzNtMS4xMzgsMi4yYTEuODEsMS44MSwwLDAsMS0xLjAxNi4yMTNoLS4zNThWNDYuNTMzaC4zMjRhMi4yODksMi4yODksMCwwLDEsMS4wNjYuMTcxLjY1OS42NTksMCwwLDEsLjI4NC42MTguODU5Ljg1OSwwLDAsMS0uMy43NW0xMi44MDUsMy4zNThWNDYuNTcxaDEuNjE4di0uN2gtNC40Mjd2LjdoMS42MnY0Ljg1OVpNMTUzLDUwLjU3MmExLjU4LDEuNTgsMCwwLDEtLjg1NC4yLDMuMDIxLDMuMDIxLDAsMCwxLS42NjItLjA3OSw1LjM0MSw1LjM0MSwwLDAsMS0uNzY2LS4yMzd2Ljc2MmE1LjA2Niw1LjA2NiwwLDAsMCwuNzczLjIwOSw0LjMxMiw0LjMxMiwwLDAsMCwuNzM4LjA2OSwyLjk2OSwyLjk2OSwwLDAsMCwxLjYzOS0uNDEyLDEuMjMxLDEuMjMxLDAsMCwwLC42MzUtMS4wNTEsMS4yLDEuMiwwLDAsMC0uMzExLS44MTEsMy41MjgsMy41MjgsMCwwLDAtMS4wNTQtLjczNmMtLjA0MS0uMDE5LS4xLS4wNTItLjE4My0uMDk0LS44NTctLjQzNS0xLjI4NC0uODEyLTEuMjg0LTEuMTM0QS42MzMuNjMzLDAsMCwxLDE1Miw0Ni43YTEuNjU3LDEuNjU3LDAsMCwxLC44ODgtLjIxLDIuOCwyLjgsMCwwLDEsLjY0Mi4wNzcsMy4zNzYsMy4zNzYsMCwwLDEsLjY2Mi4yMjd2LS43NTFhNC43MjEsNC43MjEsMCwwLDAtLjc0MS0uMTkyLDUuNDA5LDUuNDA5LDAsMCwwLS43ODItLjA1OCwyLjY4LDIuNjgsMCwwLDAtMS41NDcuNDIxLDEuMjI4LDEuMjI4LDAsMCwwLS42MjYsMS4wNDYsMS4xMjksMS4xMjksMCwwLDAsLjMxLjc4MiwzLjkyNSwzLjkyNSwwLDAsMCwxLjA4Ny43NTdjLjA0NC4wMjcuMTE3LjA2Mi4yMTIuMTEzcTEuMjExLjYzMiwxLjIxLDEuMTIzYS42LjYsMCwwLDEtLjMxOC41MzJtMi43ODEuODU4aDEuMTcxVjQ1Ljg3NWgtMS4xNzFabS02Ni4yNzYsMFY0Ni41NzFoMS42MTh2LS43SDg2Ljd2LjdoMS42MTZ2NC44NTlabTU0LjU3NC00Ljg4NXYtLjY3SDE0MC42djUuNTU2aDMuNDgxdi0uN0gxNDEuNzdWNDguODU0aDIuMTE1di0uNjU5SDE0MS43N1Y0Ni41NDVabS0xMC4zNzUtLjY3aC0xLjE2OXY1LjU1NkgxMzMuN1ptMi4yNTIsMGgtMS4xODhsMS45MTIsNS41NTZoLjk5M2wxLjkxNS01LjU1NmgtMS4xNzlsLTEuMjI2LDMuNzdabTguMzc0LTExLjUyN0gxMjcuMnYxLjkxNmgxMy4zNzh2NS42NjFoMy43NDhaTTU3LjU3OCwzMS43MTVhNS41OTQsNS41OTQsMCwwLDEtMy40NTIsMi42bDEuNzIsMS4zMTFhNi4wMSw2LjAxLDAsMCwwLDMuMTM0LTEuNDkxLDQuODg5LDQuODg5LDAsMCwwLDEuODA2LTIuNiw1LjA3OCw1LjA3OCwwLDAsMCwxLjgxNiwyLjZBNS45NTYsNS45NTYsMCwwLDAsNjUuNywzNS42MjZsMS42NjktMS4yNjZ2Ny42aDMuNTIxVjIxLjA4NUg2Ny4zNjR2NS43MDhINjQuMjg2djEuOTQyaDMuMDc4djUuMzU0YTUuMzcxLDUuMzcxLDAsMCwxLTMuMzg5LTIuMzk1LDkuMDQ4LDkuMDQ4LDAsMCwxLTEuMzU5LTUuMDIxVjIzLjY4MWgzLjAyOFYyMS43NjdINTUuMzU2djEuOTE0SDU4LjkzdjIuOTkxYTkuMDg5LDkuMDg5LDAsMCwxLTEuMzUyLDUuMDQzbTE4LjY3NCwxNC4xNnY1LjU1NmgxLjExNHYtMy44OWwyLjMwNiwzLjg5aDEuMVY0NS44NzVINzkuNjZ2My44NTdsLTIuMzE4LTMuODU3Wk01NS40MzEsNTEuNTA5YTIuMTMyLDIuMTMyLDAsMCwwLDEuMzczLS4zNzFBMS40MDYsMS40MDYsMCwwLDAsNTcuMjUsNTB2LTQuMTJINTYuMDc2djQuMTQxYS43NzQuNzc0LDAsMCwxLS4yMDguNTkzLjk1NC45NTQsMCwwLDEtLjY1MS4xODksMS44LDEuOCwwLDAsMS0uNS0uMDc1LDIuNjcsMi42NywwLDAsMS0uNTM0LS4yMzF2Ljc2OGEyLjk1MywyLjk1MywwLDAsMCwuNi4xODYsMy4yNDIsMy4yNDIsMCwwLDAsLjY0MS4wNjJNNzUuODc5LDIxLjA4NUg3Mi4zNThWNDEuOTY0aDMuNTIxWk02Mi4zNiw0Ni41NDV2LS42N0g1OC44ODJ2NS41NTZINjIuMzZ2LS43SDYwLjA1MVY0OC44NTRoMi4xMTN2LS42NTlINjAuMDUxVjQ2LjU0NVpNODQuOTc0LDI3LjY4YTEwLjEyMywxMC4xMjMsMCwwLDEtNS41MzUsMS43NDdMODAuOTA4LDMwLjlhMTQuNDkzLDE0LjQ5MywwLDAsMCw1LjI2Mi0xLjA2Miw2LjIsNi4yLDAsMCwwLDMuMzQxLTIuNTcyLDYuNDg1LDYuNDg1LDAsMCwwLDMuMzcsMi41NjFBMTQuMjc2LDE0LjI3NiwwLDAsMCw5OC4xMTQsMzAuOWwxLjQ3LTEuNDY5YTEwLjE2MSwxMC4xNjEsMCwwLDEtNS41MjMtMS43NDdROTEuNCwyNS45NTMsOTEuNCwyMy42NTl2LS4xMjhoNi43OTNWMjEuNTg5SDgwLjgzMXYxLjk0Mmg2Ljc5NHYuMTI4cTAsMi4yOS0yLjY1MSw0LjAyMW0xNC4yLDIzLjE1NmEzLjI5MSwzLjI5MSwwLDAsMCwuNTc4LTIuMTg1LDMuMzIyLDMuMzIyLDAsMCwwLS41NzgtMi4yLDMuMDQ1LDMuMDQ1LDAsMCwwLTMuNzg4LjAwNSwzLjMyMSwzLjMyMSwwLDAsMC0uNTgyLDIuMTkxLDMuMjksMy4yOSwwLDAsMCwuNTgyLDIuMTg1LDMuMDQ2LDMuMDQ2LDAsMCwwLDMuNzg4LDBNOTYuMjg5LDUwLjNhMy4zNjgsMy4zNjgsMCwwLDEtLjMtMS42NjIsMy4zNzQsMy4zNzQsMCwwLDEsLjMtMS42NjYsMS4yODEsMS4yODEsMCwwLDEsMS45OSwwLDMuNDE3LDMuNDE3LDAsMCwxLC4yOTEsMS42NjgsMy40NCwzLjQ0LDAsMCwxLS4yODYsMS42ODcsMS4wNjIsMS4wNjIsMCwwLDEtLjk4My40NiwxLjEsMS4xLDAsMCwxLTEuMDA2LS40ODVtOC4zMTksMS4xMzJoMS4xVjQ1Ljg3NUgxMDQuNnYzLjg1N2wtMi4zMTgtMy44NTdoLTEuMDg1djUuNTU2SDEwMi4zdi0zLjg5Wm0tMjIuODMzLDBoMS4xOWwuNC0xLjA5aDEuOTg3bC40MiwxLjA5aDEuMTg5bC0yLjA0My01LjU1Nkg4My44MTdabTMuMzgtMS43MTJoLTEuNTdsLjc4Ny0yLjQwOFptNywxLjcxMmgxLjE3M1Y0NS44NzVIOTIuMTZabS00LjUwOS05LjQ2N0g5MS40VjM0LjcyNmg4Ljg0OVYzMi44MUg3OC43NzV2MS45MTZoOC44NzZaTTY1LjQ4Nyw1MS4xMzhBMS40LDEuNCwwLDAsMCw2NS45MzQsNTB2LTQuMTJINjQuNzYzdjQuMTQxYS43Ny43NywwLDAsMS0uMjA5LjU5My45NDYuOTQ2LDAsMCwxLS42NS4xODksMS44MTIsMS44MTIsMCwwLDEtLjUtLjA3NSwyLjY1OSwyLjY1OSwwLDAsMS0uNTM2LS4yMzF2Ljc2OGEzLjA2OCwzLjA2OCwwLDAsMCwuNjA3LjE4NiwzLjE3OSwzLjE3OSwwLDAsMCwuNjM5LjA2MiwyLjEwNywyLjEwNywwLDAsMCwxLjM2OS0uMzcxJyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTE0LjAxNCwyMC4yNzhDMTIuNzQyLDIzLjI5MSw4LjcsMjguMzMsOC43LDI4LjMzYy0yLjEsMi43NTEtNC41ODYsNi4yLTUuNDYyLDEwLjc2NUMxLjM4NSw1MS43MjIsOS4yNjUsNTguMjI4LDE0LjEsNjAuMDU5QTE3LjEsMTcuMSwwLDAsMSw1LjIwNiw0MS44NjdjLjc4NC0zLjg3MiwyLjg2NC03Ljg1LDcuNTg4LTEyLjkxLDAsMCw1LjU3My01Ljc4Niw2LjMyNi0xMC44MTJBMTcuNjYzLDE3LjY2MywwLDAsMCwxMS4zMzQsMGExOS4yODUsMTkuMjg1LDAsMCwxLDIuNjgxLDIwLjI3OCcgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yMC44NjUsMjIuMTkyYy0xLjY1LDMuOTMxLTUuOTcxLDcuODcxLTUuOTcxLDcuODcxLTYuODIyLDYuNTUzLTcuNywxMC40NC03LjcsMTAuNDRBMTYuNTEsMTYuNTEsMCwwLDAsOC44Niw1NC4zMmExNC42MzQsMTQuNjM0LDAsMCwwLDguOTU5LDYuNDU3LDExLjc3NiwxMS43NzYsMCwwLDEtNy45Ny0xMC4zNDVjLS4yODktMy45LDEuOTA4LTguODQ4LDguMjYtMTMuODIzYTM1LjExNSwzNS4xMTUsMCwwLDAsNS42ODgtNS43NCwxOC45ODEsMTguOTgxLDAsMCwwLDMuNTkyLTguNTYsMjAuMzEyLDIwLjMxMiwwLDAsMC0xLjE3Mi05Ljk5MSwyMS43LDIxLjcsMCwwLDAtNS42Ni04LjQ4NGM0LjgzNSw5LjI4OS4zMDksMTguMzU5LjMwOSwxOC4zNTknIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNNDQuNDkxLDQyLjc1MlYyMS4xMDlIMzUuODc2VjQ1LjI0M2MtLjAyNiwxLjY3NS0uMTczLDMuNTQ3LS4xNzMsMy41NDdhMTEuNCwxMS40LDAsMCwxLS44OTIsMy45MjEsMTMuNDE4LDEzLjQxOCwwLDAsMS01LjA3OCw2LjE1NWMtOC45ODksNi4wMzgtMTcuOTc4LDEuMDQzLTE3Ljk3OCwxLjA0MywxMS4yMzYsNi42MzUsMjIuMTcyLjUyMiwyMi4xNzIuNTIyLDcuNy00LjQ0LDkuNzk1LTEwLjQ4MSwxMC4zNjItMTMuNzMxYTMwLjU0OSwzMC41NDksMCwwLDAsLjItMy45NDgnIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTAuMDA3LDU4LjUzOUExOS40MzEsMTkuNDMxLDAsMCwxLDIuNzcsNDguNjIxYTIyLjkyLDIyLjkyLDAsMCwxLS43MzMtMTAuNDUsMjcuMDI5LDI3LjAyOSwwLDAsMSwyLjYtNy40LDQxLjMyMSw0MS4zMjEsMCwwLDEsMy00LjUxN0E0MS4xMzIsNDEuMTMyLDAsMCwwLDEwLjE3NSwyMi4zLDEyLjc3LDEyLjc3LDAsMCwwLDkuMTQxLDguMDU3czIuMjQzLDUuNzc2LS42ODYsMTEuMTU1YzAsMC0xLjM3NywyLjM1LTIuODczLDQuNTc4LDAsMC0zLjI4OCw0LjczOC00LjI1LDcuOTUzQTIzLjQ4NywyMy40ODcsMCwwLDAsLjU4OSw0NC44N3MxLjU1Niw5LjM1Niw5LjQxOCwxMy42NjknIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTguOTcyLDU4LjA4OVY1NS40aC0uNTMxdi0uMzY5aDEuMDcxdjMuMDZaJyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIxLjc1Myw1NS45NjVhLjguOCwwLDAsMC0uMTA4LS40NjYuMzk0LjM5NCwwLDAsMC0uMzQxLS4xNDguMzY3LjM2NywwLDAsMC0uMzIyLjE0Ni44NzEuODcxLDAsMCwwLS4xLjQ3My44NS44NSwwLDAsMCwuMS40NzUuMzg4LjM4OCwwLDAsMCwuMzM1LjEzNC4zODIuMzgyLDAsMCwwLC4zMzUtLjE0Ni44MjguODI4LDAsMCwwLC4xLS40NjhtLS4xLjhhLjc1Ni43NTYsMCwwLDEtLjIzLjExNi44MDkuODA5LDAsMCwxLS4yNTkuMDM4Ljc5Ljc5LDAsMCwxLS42MTktLjIxNiwxLjQsMS40LDAsMCwxLC4wNDQtMS40NzguOTgxLjk4MSwwLDAsMSwuNzMzLS4yNDUuOTM3LjkzNywwLDAsMSwuNzE5LjI1OSwxLjEzMiwxLjEzMiwwLDAsMSwuMjM2Ljc4MiwyLjEsMi4xLDAsMCwxLS4yLjg1OCw3LjAwNyw3LjAwNywwLDAsMS0uNzczLDEuMjA3aC0uNjI4cS40MTItLjUxMi42MTktLjhjLjEzOC0uMTg5LjI1Ni0uMzYyLjM1NS0uNTIzJyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIyLjc3MSw1Ny42MmExLjMsMS4zLDAsMCwwLC4yNzguMTA1LDEuMiwxLjIsMCwwLDAsLjI5Mi4wMzYuNzg1Ljc4NSwwLDAsMCwuNTc1LS4xODkuNzM4LjczOCwwLDAsMCwuMTkzLS41NTguNDg3LjQ4NywwLDAsMC0uMi0uNDIyLDEuMDE3LDEuMDE3LDAsMCwwLS41ODYtLjEzOWMtLjEwNiwwLS4xOTQsMC0uMjY5LjAwOWEyLjE3NiwyLjE3NiwwLDAsMC0uMjIzLjAzMmwuMjg0LTEuNDY0aDEuNVY1NS40SDIzLjU3MmwtLjE2OC43NDYuMTUzLS4wMTdjLjA0NiwwLC4wODcsMCwuMTIyLDBhMS4wMSwxLjAxLDAsMCwxLC43MDguMjQ1Ljg0Ni44NDYsMCwwLDEsLjI2OC42NTMsMS4wMjUsMS4wMjUsMCwwLDEtLjMyNy44MTEsMS4zMTcsMS4zMTcsMCwwLDEtLjkxLjI5MSwyLjI2LDIuMjYsMCwwLDEtLjQwOC0uMDM2LDIuMDY5LDIuMDY5LDAsMCwxLS4zODYtLjEwOVonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMjUuMTE0LDU4LjA5bDEuMTQ3LTEuNjIyYTIuNDI3LDIuNDI3LDAsMCwwLC4yMjctLjQuODMuODMsMCwwLDAsLjA3NC0uMzI1LjQyNS40MjUsMCwwLDAtLjA5NC0uMy40MDYuNDA2LDAsMCwwLS4zLS4xLjM3NC4zNzQsMCwwLDAtLjMyLjEzLjc4MS43ODEsMCwwLDAtLjA5NC40NDJ2LjEwNmgtLjUzOWEuMjM2LjIzNiwwLDAsMS0uMDA2LS4wNTl2LS4xYS44My44MywwLDAsMSwuMjQ4LS42NTgsMS4wODQsMS4wODQsMCwwLDEsLjc0Mi0uMjIxLDEuMTE1LDEuMTE1LDAsMCwxLC43LjIuNjcxLjY3MSwwLDAsMSwuMjU1LjU1NSwxLjAzOSwxLjAzOSwwLDAsMS0uMS40MjgsMi42ODMsMi42ODMsMCwwLDEtLjMzNS41MjZsLS43NzcsMWgxLjEyM3YuMzg4WicgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yNi40NjEsNDguMDZ2My42ODNhMS4xOTQsMS4xOTQsMCwwLDAsLjUsMS4wNjksMi45LDIuOSwwLDAsMCwxLjU3Ni4zMzUsMi45MzMsMi45MzMsMCwwLDAsMS41OC0uMzM1LDEuMiwxLjIsMCwwLDAsLjUtMS4wNjlWNDguMDZIMjkuNTYyVjUxLjhhLjYuNiwwLDAsMS0uMjQ5LjUzNCwxLjg0OSwxLjg0OSwwLDAsMS0xLjU0OSwwLC41OTQuNTk0LDAsMCwxLS4yNTUtLjUzNFY0OC4wNlonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTUuNzA4LDUzLjE1OGExLjkyNCwxLjkyNCwwLDAsMCwxLjI0MS0uMzM0LDEuMjcsMS4yNywwLDAsMCwuNC0xLjAzNVY0OC4wNkgxNi4yOXYzLjc0OGEuNy43LDAsMCwxLS4xODcuNTM3Ljg1NC44NTQsMCwwLDEtLjU4OC4xNzIsMS42MzQsMS42MzQsMCwwLDEtLjQ0OS0uMDY5LDIuNDMsMi40MywwLDAsMS0uNDgzLS4yMDl2LjdhMi42NSwyLjY1LDAsMCwwLC41NDkuMTY4LDIuOTc3LDIuOTc3LDAsMCwwLC41NzcuMDU1JyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIxLjcwOSw0OC42Njl2LS42MDlIMTguNTU4djUuMDI5aDMuMTUxdi0uNjMxSDE5LjYxOXYtMS43aDEuOTEzdi0uNkgxOS42MTlWNDguNjY5WicgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yNC44NjMsNTIuODI0YTEuMjY3LDEuMjY3LDAsMCwwLC40LTEuMDM0VjQ4LjA2SDI0LjIwN3YzLjc0OWEuNy43LDAsMCwxLS4xODkuNTM2Ljg1NS44NTUsMCwwLDEtLjU4OS4xNzIsMS42NjksMS42NjksMCwwLDEtLjQ0OS0uMDY5LDIuMjY2LDIuMjY2LDAsMCwxLS40ODUtLjIwOXYuN2EyLjc0OSwyLjc0OSwwLDAsMCwuNTUuMTY4LDIuODc0LDIuODc0LDAsMCwwLC41OC4wNTUsMS45MDksMS45MDksMCwwLDAsMS4yMzgtLjMzNCcgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yMy4xOTMsNDYuNDQyYTEuOTg0LDEuOTg0LDAsMCwwLC45MTgtLjMwNWw1LjM0NS4zN1YzOS42NDJMMjguOSwzOS42MWwuMjQ3LjM4OHY2LjIxOWwtNS4xNC0uMzI5YTEuNTA3LDEuNTA3LDAsMCwxLTEuNzkxLDBsLTUuMTM4LjMyOVY0MGwuMjQ1LS4zODgtLjU1OC4wMzJ2Ni44NjVsNS4zNDYtLjM3YTEuOTcsMS45NywwLDAsMCwuOTE2LjMwNSwxLjQ3MSwxLjQ3MSwwLDAsMCwuMTY3LDAnIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMTcuOSwzOS4yMTljLS4xMTkuMTg2LS41MjguODI4LS41NDEuODQ1djUuNTc3Yy4xMi0uMi41My0uODc5LjU0MS0uOVonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMjIuMjc1LDQ1LjZsLjAxNS4wMTRhMS4xOTEsMS4xOTEsMCwwLDAsLjYwOC4yODIsMS4xNzEsMS4xNzEsMCwwLDAtLjYtLjg4LDMuNzIyLDMuNzIyLDAsMCwwLTEuNjkxLS4yOTFjLS4zNTQsMC0uNzMyLjAyMS0xLjE2Mi4wNjNzLS44NTQuMS0xLjMuMTgzYy0uMDE5LjAzLS40OTUuODE5LS41NjcuOTM4LjE1OS0uMDA5LDQuNy0uMzA5LDQuNy0uMzA5JyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTI4Ljg2MSw0MC4wNjVsLS41NC0uODQ1djUuNTI2Yy4wMTEuMDE3LjQyLjcuNTQuOVonIGZpbGw9JyNmZmZmZmYnLz48cGF0aCBkPSdNMjMuOTIsNDUuMDExYTEuMTgsMS4xOCwwLDAsMC0uNi44OCwxLjE4NywxLjE4NywwLDAsMCwuNjEtLjI4MmwuMDE0LS4wMTRzNC41NC4zLDQuNy4zMDljLS4wNzItLjExOS0uNTQ3LS45MDgtLjU2NS0uOTM4LS40NDgtLjA4LS44ODctLjE0Mi0xLjMtLjE4NHMtLjgwOC0uMDYyLTEuMTYxLS4wNjJhMy43MywzLjczLDAsMCwwLTEuNjkyLjI5MScgZmlsbD0nI2ZmZmZmZicvPjxwYXRoIGQ9J00yNi43NjYsMzguNjMxYTEwLjk4MiwxMC45ODIsMCwwLDAtMS4yLS4wNjhsLS41MzYuMDIzLS40MDguMDYxYTIuMTQ0LDIuMTQ0LDAsMCwwLS43NDQuMjg3bC0uMDU4LjA0NEwyMy44LDM5YTEuODI2LDEuODI2LDAsMCwwLS41MjEuNTQ3djUuNmExLjMsMS4zLDAsMCwxLC4yODMtLjI3NiwzLjMyMSwzLjMyMSwwLDAsMSwxLjM1Mi0uNDIxbC4wMjQsMCwuMDI2LDBhNy45LDcuOSwwLDAsMSwxLS4wMzNsLjc0MS4wNTFjLjM3NS4wMzYuODEuMDkyLDEuMy4xNjRWMzguODI4Yy0uNDIxLS4wODctLjgzNi0uMTU0LTEuMjMtLjJtLjU0LDEuMjRhMi42NzUsMi42NzUsMCwwLDEtMS41NjcsMS41MDdzLjIwNS4wNDkuNjgyLjYxMmExLjk2NSwxLjk2NSwwLDAsMCwuNjIyLjUxNHMtLjY3MywxLjMyMS0uNzQsMS40NzdhMi45NDQsMi45NDQsMCwwLDEtLjgzLTEuMzA1LjIzNy4yMzcsMCwwLDAtLjIzNC0uMTIycy0uNTM1LjA1OS0uNzUzLjA3N2EuMi4yLDAsMCwxLS4yMTYsMGwtLjA3OS0uMDgzcy0uMDE5LjAwNS0uMDUyLS4wMjRhLjE3OS4xNzksMCwwLDEtLjA3My0uMTI4LjE0Mi4xNDIsMCwwLDEsLjA0NC0uMTEzLDcuOTIzLDcuOTIzLDAsMCwwLDEuMDU3LS44MzJzLS4wMDkuMDMxLjA0LS4wOTNhMS43MjgsMS43MjgsMCwwLDEtLjQyNy0uMTc3cy0uMTg4LS4xMjgtLjE4My0uMjk0bC4wNDQsMHMwLC4yLjM4Ny4zMThhLjg1NS44NTUsMCwwLDEtLjEyNy0uMjgyLjE4OC4xODgsMCwwLDEsLjA1NC0uMDEycy4xMS4zMjYuMy4zMzRjMCwwLC4zNjUtLjIyNC4zOTMtLjQ3NiwwLDAtLjE1Mi0uMDkzLS4yMTMtLjQ3M2wuMDUtLjAyOHMuMDYuMzU5LjI0LjM0OWMwLDAsLjE2MywwLC4yNjMtLjNhMS40NzIsMS40NzIsMCwwLDAsLjA3OS0uNSwxLjc2NSwxLjc2NSwwLDAsMC0uMDM3LS4yNDRsLjAzNy0uMDZhMS4wODMsMS4wODMsMCwwLDEsLjA0OS4xODQuNzY1Ljc2NSwwLDAsMSwuMTQzLS4zNjdsLjAzMy4wMThhLjY1Ny42NTcsMCwwLDAtLjA4Ny40LDEuODI3LDEuODI3LDAsMCwxLS4xMi42NDgsMi43LDIuNywwLDAsMS0uNjA1LjksNS40MTcsNS40MTcsMCwwLDAsLjc0MS0uMzZzLjIyMS0uMTM3LjI0Ny0uNjA3aC4wNThhMSwxLDAsMCwxLS4wMDcuMzgzLDEuNjExLDEuNjExLDAsMCwwLC42NzYtLjgyMi41MDguNTA4LDAsMCwwLS4wMTUtLjMzNGwuMDI0LS4wMzJhLjYuNiwwLDAsMSwuMDgyLjIzMi40MjMuNDIzLDAsMCwxLC4yNTItLjIzbC4wMTMuMDM1YS42MjEuNjIxLDAsMCwwLS4yNDMuMzE1JyBmaWxsPScjZmZmZmZmJy8+PHBhdGggZD0nTTIyLjQyMSwzOWwtLjAyMi0uMDE3LS4wNTktLjA0M2EyLjEyMSwyLjEyMSwwLDAsMC0uNzQyLS4yODhsLS40MTEtLjA2MS0uNTMzLS4wMjNhMTAuNywxMC43LDAsMCwwLTEuMi4wNjhjLS40LjA0My0uODExLjEwOS0xLjIzMS4ydjUuNzk1Yy40ODYtLjA3My45MjEtLjEyOSwxLjI5NS0uMTY0bC43NDMtLjA1MmE3Ljk4MSw3Ljk4MSwwLDAsMSwuOTkzLjAzNGwuMDMsMCwuMDI4LDBhMy4yODUsMy4yODUsMCwwLDEsMS4zNDcuNDI0LDEuMjUxLDEuMjUxLDAsMCwxLC4yODQuMjczdi01LjZBMS44MzEsMS44MzEsMCwwLDAsMjIuNDIxLDM5bS0uNzQ1LDQuNjc0SDE5LjZhNC42NzMsNC42NzMsMCwwLDAtLjMyMy0yLjQ4NGMuNDM2LS40ODguOTktMS4yMDksMS4yMzQtMS41MzN2MS45NGEuMzI4LjMyOCwwLDEsMCwuMjQzLDBWMzkuNjM3Yy4yMzYuMzE0LjgsMS4wNTIsMS4yNDYsMS41NDlhNC42NjgsNC42NjgsMCwwLDAtLjMyMSwyLjQ4NCcgZmlsbD0nI2ZmZmZmZicvPjwvc3ZnPg==" alt="제주대학교">
+        <p><strong style="color:#fff">제주대학교 첨단인재양성 부트캠프</strong></p>
+        <p data-cfg="address"></p>
+        <p>전화 <span data-cfg="phone"></span> / 이메일 <span data-cfg="email"></span></p>
+      </div>
+      <ul aria-label="관련 사이트">
+        <li><a href="https://www.jejunu.ac.kr" target="_blank" rel="noopener">제주대학교</a></li>
+        <li><a class="js-apply" href="#" target="_blank" rel="noopener">교육 신청</a></li>
+        <li><a href="#faq">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    <p class="copy">© <span id="year"></span> Jeju National University. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-apply js-apply" href="#" target="_blank" rel="noopener">교육 신청하기</a>
+  <button class="btn btn-ghost js-share" type="button" aria-label="이 페이지 공유하기">공유</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ================================================================
+   사이트 설정: 확정된 내용은 여기만 고치면 페이지 전체에 반영됩니다.
+   ================================================================ */
+const CONFIG = {
+  applyUrl: "https://forms.gle/8XRhf5AHxcEk7YPw8",
+  // 모집 마감일(YYYY-MM-DD). 입력하면 신청 박스에 마감까지 남은 날짜가 표시됩니다.
+  deadline: "",
+  target: "성인 미취업자",
+  capacity: "추후 안내",
+  applyPeriod: "추후 안내",
+  eduPeriod: "추후 안내",
+  place: "제주대학교 아라캠퍼스",
+  placeFull: "제주대학교 아라캠퍼스 (강의실 추후 안내)",
+  fee: "모집 공고에서 안내",
+  operator: "제주대학교 AI융합원 AI교육센터",
+  address: "제주특별자치도 제주시 제주대학로 102",
+  phone: "추후 안내",
+  email: "추후 안내",
+  courseNote: "세부 교육 시간과 커리큘럼은 운영 상황에 따라 조정될 수 있습니다.",
+  benefitNote: "지원 내용은 사업 운영 기준에 따라 달라질 수 있으며, 확정 내용은 모집 공고로 안내합니다.",
+  courses: [
+    { stage: "1단계", color: "#54A323", title: "AI 활용 기초",
+      desc: "생성형 AI가 무엇이고 일에 어떻게 쓰는지 직접 써 보며 익힙니다.",
+      items: ["생성형 AI 이해와 좋은 질문 작성법", "문서·보고서·이메일 작성에 AI 활용", "자료 조사와 요약, 사실 확인 습관"] },
+    { stage: "2단계", color: "#049EDC", title: "직무별 AI 실무",
+      desc: "사무, 마케팅, 데이터 등 희망 직무에 맞춰 AI 도구를 깊이 다룹니다.",
+      items: ["스프레드시트 데이터 정리와 시각화", "홍보 이미지·카드뉴스·영상 제작", "반복 업무 자동화 기초"] },
+    { stage: "3단계", color: "#003288", title: "실전 프로젝트",
+      desc: "팀을 이뤄 제주 지역의 실제 과제를 AI로 해결하고 결과를 발표합니다.",
+      items: ["지역 기관·기업 과제 기반 팀 프로젝트", "결과물 발표와 현업 멘토 피드백", "포트폴리오 정리"] }
+  ],
+  tools: ["ChatGPT", "Claude", "Gemini", "Canva", "Google 스프레드시트"],
+  faqs: [
+    { q: "전공이나 관련 경력이 없어도 신청할 수 있나요?", a: "네. 1단계에서 AI를 처음 접하는 분을 기준으로 기초부터 다룹니다. 컴퓨터로 문서 작성과 인터넷 검색을 할 수 있다면 충분합니다." },
+    { q: "신청은 어떻게 하나요?", a: "페이지의 ‘교육 신청하기’ 버튼을 누르면 구글 폼이 열립니다. 안내에 따라 신청서를 작성해 제출하면 됩니다." },
+    { q: "선발 결과는 언제, 어떻게 알 수 있나요?", a: "모집 마감 후 서류를 확인하고, 신청서에 입력하신 연락처로 개별 안내합니다." },
+    { q: "교육비나 참여 지원금이 있나요?", a: "교육비와 지원 내용은 모집 공고에서 확정해 안내합니다. 궁금한 점은 문의처로 연락해 주세요." },
+    { q: "노트북을 준비해야 하나요?", a: "실습 환경은 오리엔테이션에서 안내합니다. 개인 노트북이 있다면 가져오시는 것을 권장합니다." },
+    { q: "중간에 취업하면 어떻게 되나요?", a: "교육 중 취업한 경우의 처리 기준은 오리엔테이션에서 안내합니다. 먼저 운영진에게 알려 주세요." }
+  ]
+};
+
+/* ---------- 이하 동작 코드 ---------- */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+$$("[data-cfg]").forEach(el => { const v = CONFIG[el.dataset.cfg]; if (v != null) el.textContent = v; });
+$$(".js-apply").forEach(a => a.href = CONFIG.applyUrl);
+
+$("#courseList").innerHTML = CONFIG.courses.map(c => `
+  <article style="--c:${esc(c.color)}">
+    <span class="stage">${esc(c.stage)}</span>
+    <h3>${esc(c.title)}</h3>
+    <p>${esc(c.desc)}</p>
+    <ul>${c.items.map(i => `<li>${esc(i)}</li>`).join("")}</ul>
+  </article>`).join("");
+$("#toolList").insertAdjacentHTML("beforeend", CONFIG.tools.map(t => `<span class="tag">${esc(t)}</span>`).join(""));
+
+$("#faqList").innerHTML = CONFIG.faqs.map(f => `
+  <details><summary><span>${esc(f.q)}</span><i aria-hidden="true"></i></summary>
+  <p class="ans">${esc(f.a)}</p></details>`).join("");
+
+$("#year").textContent = new Date().getFullYear();
+
+// 지도 링크
+const q = encodeURIComponent("제주대학교");
+$("#naverMap").href = `https://map.naver.com/p/search/${q}`;
+$("#kakaoMap").href = `https://map.kakao.com/?q=${q}`;
+
+// 마감 D-day
+if (CONFIG.deadline) {
+  const end = new Date(CONFIG.deadline + "T23:59:59+09:00");
+  const days = Math.ceil((end - new Date()) / 86400000);
+  const el = $("#dday");
+  if (days < 0) { el.textContent = "모집이 마감되었습니다."; el.classList.add("show"); }
+  else { el.textContent = days === 0 ? "오늘 모집이 마감됩니다." : `모집 마감까지 ${days}일 남았습니다.`;
+         el.classList.add("show"); if (days <= 3) el.classList.add("urgent"); }
+}
+
+// 공유
+const pageUrl = location.href.split("#")[0];
+const shareText = "제주대학교 첨단인재양성 부트캠프 교육생 모집 중. 제주에서 AI 실무를 배우고 다음 일을 시작하세요.";
+const U = encodeURIComponent(pageUrl), T = encodeURIComponent(shareText);
+$("#shBand").href = `https://band.us/plugin/share?body=${T}%0A${U}&route=${U}`;
+$("#shFb").href = `https://www.facebook.com/sharer/sharer.php?u=${U}`;
+$("#shX").href = `https://twitter.com/intent/tweet?text=${T}&url=${U}`;
+
+const toast = msg => { const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 2200); };
+async function copyLink() {
+  try { await navigator.clipboard.writeText(pageUrl); toast("링크를 복사했습니다."); }
+  catch { prompt("아래 링크를 복사해 주세요.", pageUrl); }
+}
+$$(".js-copy").forEach(b => b.addEventListener("click", copyLink));
+$$(".js-share").forEach(b => b.addEventListener("click", async () => {
+  if (navigator.share) {
+    try { await navigator.share({ title: document.title, text: shareText, url: pageUrl }); } catch (e) {}
+  } else copyLink();
+}));
+
+// 모바일 메뉴
+const menuBtn = $("#menuBtn"), gnb = $("#gnb");
+menuBtn.addEventListener("click", () => {
+  const open = gnb.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", open);
+  menuBtn.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+});
+$$("a", gnb).forEach(a => a.addEventListener("click", () => {
+  gnb.classList.remove("open"); menuBtn.setAttribute("aria-expanded", false); menuBtn.setAttribute("aria-label", "메뉴 열기");
+}));
+
+// 현재 섹션 메뉴 표시
+const links = $$("a", gnb);
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) links.forEach(l => l.classList.toggle("on", l.getAttribute("href") === "#" + e.target.id));
+}), { rootMargin: "-45% 0px -50% 0px" });
+links.forEach(l => { const s = $(l.getAttribute("href")); if (s) io.observe(s); });
+</script>
+</body>
+</html>
